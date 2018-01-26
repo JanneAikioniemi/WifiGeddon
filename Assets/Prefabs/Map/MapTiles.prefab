@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4334915863258898}
+  - component: {fileID: 114539801503808394}
   m_Layer: 0
   m_Name: MapTiles
   m_TagString: Untagged
@@ -39,3 +40,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114539801503808394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1301656381984644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348b0366d13d94b779d449ee5d187a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 10
+  columns: 10
+  tileWidth: 5
+  tileHeight: 5
+  maxEmptyTileCount: 10
+  emptyTile: {fileID: 1800790772232758, guid: d9a5232f867254685bfbca8a9825795d, type: 2}
+  towerTile: {fileID: 1798943167077458, guid: 6d9f44ea50fd043f786db07f0ee8f91f, type: 2}
+  forestTile: {fileID: 1122430162375684, guid: 1ff0a178fcdc344fe91a5ca59887bbde, type: 2}
