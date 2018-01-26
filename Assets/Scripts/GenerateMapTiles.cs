@@ -53,4 +53,21 @@ public class GenerateMapTiles : MonoBehaviour {
 			}
 		}
 	}
+	void Update()
+	{
+		if ( Input.GetMouseButtonDown (0)){ 
+			RaycastHit hit; 
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+			if ( Physics.Raycast (ray,out hit,100.0f)) {
+				if (hit.transform.name == "FogOfWar") {
+					StartCoroutine (RevealTile (hit.transform));
+				}
+			}
+		}
+	}
+	IEnumerator RevealTile(Transform obj)
+	{
+		obj.gameObject.SetActive (false);
+		yield return null;
+	}
 }
