@@ -75,58 +75,102 @@ MonoBehaviour:
   - ItemType: 0
     DisplayName: Food for one day
     Price: 20
+    Count: 0
+    IsOwned: 0
   - ItemType: 0
     DisplayName: Food for two days
     Price: 35
+    Count: 0
+    IsOwned: 0
   - ItemType: 0
     DisplayName: Food for three days
     Price: 50
+    Count: 0
+    IsOwned: 0
   generalItems:
   - ItemType: 1
     DisplayName: Kirves
     Price: 20
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: Sukset
     Price: 20
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: "Lumikeng\xE4t"
     Price: 20
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: Moottorisaha
     Price: 20
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: Kiikarit
     Price: 20
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: Ruuvipenkki
     Price: 20
+    Count: 0
+    IsOwned: 0
   boozeItems:
   - ItemType: 1
     DisplayName: Kalja x8
     Price: 10
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: Kossu
     Price: 8
+    Count: 0
+    IsOwned: 0
   - ItemType: 1
     DisplayName: Limuviina
     Price: 3
+    Count: 0
+    IsOwned: 0
+  - ItemType: 1
+    DisplayName: "Huonoa viini\xE4"
+    Price: 6
+    Count: 0
+    IsOwned: 0
+  - ItemType: 1
+    DisplayName: "Hyv\xE4\xE4 viini\xE4"
+    Price: 30
+    Count: 0
+    IsOwned: 0
   sabotageItems:
   - ItemType: 2
     DisplayName: Voimapihdit
     Price: 30
+    Count: 0
+    IsOwned: 0
   - ItemType: 2
     DisplayName: Sorkkarauta
     Price: 30
+    Count: 0
+    IsOwned: 0
   - ItemType: 2
     DisplayName: Papatti
     Price: 30
+    Count: 0
+    IsOwned: 0
   weaponItems:
   - ItemType: 3
     DisplayName: Haulikko
     Price: 120
+    Count: 0
+    IsOwned: 0
   - ItemType: 3
     DisplayName: Pesismaila
     Price: 50
+    Count: 0
+    IsOwned: 0
 --- !u!114 &114947059318860808
 MonoBehaviour:
   m_ObjectHideFlags: 1
