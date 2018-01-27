@@ -6,6 +6,9 @@ public class MapHandler : MonoBehaviour {
 	public delegate void WoodChoppedAction();
 	public static event WoodChoppedAction OnWoodChopped;
 
+	public float timeSpendOnSearch = 5f;
+	public float timeSpendOnChopping = 10f;
+	public int moneyFromChopping = 100;
 	void Update()
 	{
 		if ( Input.GetMouseButtonDown (0)){ 
@@ -33,18 +36,22 @@ public class MapHandler : MonoBehaviour {
 	}
 	IEnumerator RevealTile(Transform obj)
 	{
+		ResourceManager.Instance.TimeLeftForRound -= timeSpendOnSearch;
 		obj.gameObject.SetActive (false);
 		yield return null;
 	}
 	IEnumerator ForestTileClicked(Transform obj)
 	{
-		Debug.Log ("Forest tile clicked");
-		for (int i = 0; i < this.transform.childCount; i++) {			
+		//Debug.Log ("Forest tile clicked");
+		for (int i = 0; i < obj.childCount; i++) {			
 			if (obj.GetChild (i).tag == "Wood" && obj.GetChild(i).gameObject.activeSelf)
 			{					
 				obj.GetChild (i).gameObject.SetActive (false);
-				if (OnWoodChopped != null)
+				/*if (OnWoodChopped != null)
 					OnWoodChopped ();
+					*/
+				ResourceManager.Instance.CurrentMoney += moneyFromChopping;
+				ResourceManager.Instance.TimeLeftForRound -= timeSpendOnChopping;
 				break;
 			}
 		}
