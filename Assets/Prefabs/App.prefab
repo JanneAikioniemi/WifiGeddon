@@ -99,6 +99,16 @@ MonoBehaviour:
   - ItemType: 1
     DisplayName: Ruuvipenkki
     Price: 20
+  boozeItems:
+  - ItemType: 1
+    DisplayName: Kalja x8
+    Price: 10
+  - ItemType: 1
+    DisplayName: Kossu
+    Price: 8
+  - ItemType: 1
+    DisplayName: Limuviina
+    Price: 3
   sabotageItems:
   - ItemType: 2
     DisplayName: Voimapihdit
