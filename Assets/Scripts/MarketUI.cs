@@ -31,7 +31,7 @@ public class MarketUI : MonoBehaviour
         alko.gameObject.SetActive(true);
     }
 
-    private void HideAll()
+    public void HideAll()
     {
         kMarket.gameObject.SetActive(false);
         kRauta.gameObject.SetActive(false);

@@ -13,6 +13,7 @@ public class ResourceManager
     public float CurrentMoney = 300;
     public float CurrentWood = 100;
     public float TimeLeftForRound = 100;
+    private List<Item> CurrentItems = new List<Item>();
 
     public void SetStartingCondition(float money, float timeLeft)
     {
@@ -23,5 +24,39 @@ public class ResourceManager
     public void ResetRound(float amount)
     {
         TimeLeftForRound = 100f;
+    }
+
+    public void AddToInventory(Item item)
+    {
+        CurrentItems.Add(item);
+
+        Debug.Log("Current inventory: ");
+        foreach (var it in CurrentItems)
+        {
+            Debug.Log(it.ItemType + " : " + it.DisplayName);
+        }
+    }
+
+    public void RemoveFromInventory(string itemName)
+    {
+        int rmIndex = -1;
+        for (var i = 0; i < CurrentItems.Count; i++)
+        {
+            if (CurrentItems[i].DisplayName.Equals(itemName))
+            {
+                rmIndex = i;
+                break;
+            }
+        }
+
+        if (rmIndex >= 0)
+        {
+            CurrentItems.RemoveAt(rmIndex);
+        }
+    }
+
+    public void RemoveFood()
+    {
+        CurrentItems.RemoveAll(t => t.ItemType == ItemType.Food);
     }
 }

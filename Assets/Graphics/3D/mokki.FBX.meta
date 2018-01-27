@@ -6,17 +6,66 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Box006
+    100004: ikkuna1
+    100006: ikkuna2
+    100008: ikkuna3
+    100010: ikkuna4
+    100012: mokki 1
     400000: //RootNode
+    400002: Box006
+    400004: ikkuna1
+    400006: ikkuna2
+    400008: ikkuna3
+    400010: ikkuna4
+    400012: mokki 1
     2300000: //RootNode
+    2300002: Box006
+    2300004: ikkuna1
+    2300006: ikkuna2
+    2300008: ikkuna3
+    2300010: ikkuna4
+    2300012: mokki 1
     3300000: //RootNode
+    3300002: Box006
+    3300004: ikkuna1
+    3300006: ikkuna2
+    3300008: ikkuna3
+    3300010: ikkuna4
+    3300012: mokki 1
     4300000: mokki
+    4300002: ikkuna1
+    4300004: ikkuna2
+    4300006: Box006
+    4300008: ikkuna3
+    4300010: ikkuna4
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: 'Material #18'
+    second: {fileID: 2100000, guid: a6ed55b93f0af4e778be0da2fe9d533d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: 3ab12919d4fb1074f9cad322832ee89e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lasi
+    second: {fileID: 2100000, guid: eac4057329d154f47aad8424f4a7993e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: laudat
+    second: {fileID: 2100000, guid: 17af4ffba1f394d08b6f5d52f2457dca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: puu
+    second: {fileID: 2100000, guid: 555d9d87944ab414d8702e8c83ed49d9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

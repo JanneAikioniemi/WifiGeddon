@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ActionBuyItem : MenuAction
 {
     private Item item;
+    [SerializeField]
+    private GameObject popupScreen;
 
     public override void Act()
     {
@@ -15,37 +17,46 @@ public class ActionBuyItem : MenuAction
 
     void Update()
     {
-        if (item != null)
-            CanAfford();
+        if (item == null) return;
+
+        m_button.image.color = CanAfford() ? Color.white : Color.red;
     }
 
     public void SetItem(Item i)
     {
         item = i;
 
-        m_button.transform.GetComponentInChildren<Text>().text = item.DisplayName;
+        m_button.transform.GetComponentInChildren<Text>().text = string.Format("{0} - {1:0}", item.DisplayName, item.Price);
     }
 
-    public void CanAfford()
+    public bool CanAfford()
     {
-        if (item.Price > ResourceManager.Instance.CurrentMoney)
-        {
-            m_button.interactable = false;
-            m_button.image.color = Color.red;
-        }
-        else
-        {
-            m_button.interactable = true;
-            m_button.image.color = Color.white;
-        }
+        return item.Price < ResourceManager.Instance.CurrentMoney;
     }
 
     private void Buy()
     {
+        if (!CanAfford())
+        {
+            ShowPopup();
+            return;
+        }
         // Reduce price from current cash
         ResourceManager.Instance.CurrentMoney -= item.Price;
 
         // Add item to inventory
+        ResourceManager.Instance.AddToInventory(item);
+    }
 
+    private void ShowPopup()
+    {
+        StartCoroutine(PopupTimer());
+    }
+
+    private IEnumerator PopupTimer()
+    {
+        popupScreen.SetActive(true);
+        yield return new WaitForSeconds(3.5f);
+        popupScreen.SetActive(false);
     }
 }
