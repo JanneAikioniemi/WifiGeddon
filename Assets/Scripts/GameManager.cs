@@ -85,24 +85,28 @@ public class GameManager : MonoBehaviour
     {
         uiManager.ShowWifiTower(true);
         wifiScene.SetActive(true);
+		marketScene.GetComponent<AudioSource> ().Stop ();
     }
 
     private void SwitchToMarketView()
     {
         uiManager.ShowMarketUi(true);
         marketScene.SetActive(true);
+		marketScene.GetComponent<AudioSource> ().Play ();
     }
 
     private void SwitchToForestView()
     {
         uiManager.ShowForestUi(true);
         forestScene.SetActive(true);
+		marketScene.GetComponent<AudioSource> ().Stop ();
     }
 
     private void SwitchToCabinView()
     {
         uiManager.ShowCabinUi(true);
         cabinScene.SetActive(true);
+		marketScene.GetComponent<AudioSource> ().Stop ();
     }
 
     private void HideAll()
