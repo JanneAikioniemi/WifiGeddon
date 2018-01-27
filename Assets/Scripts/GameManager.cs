@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
         uiManager.ShowWifiTower(true);
         wifiScene.SetActive(true);
 		marketScene.GetComponent<AudioSource> ().Stop ();
+		wifiScene.GetComponent<AudioSource> ().Play ();
     }
 
     private void SwitchToMarketView()
@@ -93,6 +94,7 @@ public class GameManager : MonoBehaviour
         uiManager.ShowMarketUi(true);
         marketScene.SetActive(true);
 		marketScene.GetComponent<AudioSource> ().Play ();
+		wifiScene.GetComponent<AudioSource> ().Stop ();
     }
 
     private void SwitchToForestView()
@@ -100,6 +102,7 @@ public class GameManager : MonoBehaviour
         uiManager.ShowForestUi(true);
         forestScene.SetActive(true);
 		marketScene.GetComponent<AudioSource> ().Stop ();
+		wifiScene.GetComponent<AudioSource> ().Stop ();
     }
 
     private void SwitchToCabinView()
@@ -107,6 +110,7 @@ public class GameManager : MonoBehaviour
         uiManager.ShowCabinUi(true);
         cabinScene.SetActive(true);
 		marketScene.GetComponent<AudioSource> ().Stop ();
+		wifiScene.GetComponent<AudioSource> ().Stop ();
     }
 
     private void HideAll()
