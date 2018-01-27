@@ -1,11 +1,24 @@
-Musat:
+﻿Musat:
  * Yleisbiisi: joku humppa tjsp?
+	- Joku paatoksellinen perushumppa. Tää kaveri on "grumpy old man".
  * Jokaselle kaupalle oma biisi?
+	- Vois olla hyvä.
+		- Sirkan ruokakauppa
+		- Maurin sekatavarakauppa
+		- Sepon kotipolttoset
  * Metsäbiisi?
+	- Oisko semmosta "tuulen huminaa korvissa"?
+
 Äänet
  * päähenkilön sadattelua (Risu-ukko?)
+	- Risu-ukko kyllä! Perkelettä pitäs saaha jokunen erilainen.
  * Työmiehen sadattelua (On tämä saatana työmaa)
+	- Juuri näin
+	- Lisäksi jotain työn ääniä, sahausta, vasarointia yms.
  * Valikkoääniä
+	- Risu-ukolla on se "TÄ", sitä vois käyttää eri pitcheillä :D
   * Juomille ym omat?
+	- tölkin avaus, glupglupglup, gulp, aaaah
  * metsän ääniä?
+	- linnun laulua, metänhakkuuta, joku kruntskruntskävely maybe.
  
