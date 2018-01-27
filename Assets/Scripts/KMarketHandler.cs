@@ -17,7 +17,7 @@ public class KMarketHandler : MonoBehaviour
         for (int i = 0; i < random; i++)
         {
             var obj = Instantiate(GameManager.Instance.BuyButtonPrefab);
-            obj.transform.SetParent(ContentRoot);
+            obj.transform.SetParent(ContentRoot, false);
             obj.name = "Buy_" + i;
             obj.GetComponent<ActionBuyItem>().SetItem(ItemDB.Instance.GetFoodItems()[0]);
         }
