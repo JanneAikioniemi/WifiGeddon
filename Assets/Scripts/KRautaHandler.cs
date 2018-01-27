@@ -18,7 +18,7 @@ public class KRautaHandler : MonoBehaviour
         combinedList.AddRange(ItemDB.Instance.GetGeneralItems());
 
         int random = Random.Range(1, 100);
-        if (random % 6 == 0)
+		if (random % ResourceManager.Instance.daysLeft >= 1)
         {
             var specItem = Random.Range(0, ItemDB.Instance.GetSpecialItems().Count);
             combinedList.Add(ItemDB.Instance.GetSpecialItems()[specItem]);

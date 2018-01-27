@@ -24,6 +24,12 @@ public class KMarketHandler : MonoBehaviour
         int minimum = combinedList.Count / 3;
 
         int randomAmountOfItems = Random.Range(minimum, maximum);
+		int random = Random.Range(1, 100);
+		if (random % ResourceManager.Instance.daysLeft >= 1)
+		{
+			var specItem = Random.Range(0, ItemDB.Instance.GetSpecialItems().Count);
+			combinedList.Add(ItemDB.Instance.GetSpecialItems()[specItem]);
+		}
 
         // Random amount of stuff in store
         for (int i = 0; i < randomAmountOfItems; i++)
