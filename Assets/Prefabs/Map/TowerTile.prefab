@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23954398276761360}
   m_Layer: 0
   m_Name: FogOfWar
-  m_TagString: Untagged
+  m_TagString: FogOfWar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 23134502572772660}
   m_Layer: 0
   m_Name: TowerTile
-  m_TagString: Untagged
+  m_TagString: TowerTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

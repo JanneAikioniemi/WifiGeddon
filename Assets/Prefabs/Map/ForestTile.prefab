@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23823249465716834}
   m_Layer: 0
   m_Name: FogOfWar
-  m_TagString: Untagged
+  m_TagString: FogOfWar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 23125240429105132}
   m_Layer: 0
   m_Name: ForestTile
-  m_TagString: Untagged
+  m_TagString: ForestTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

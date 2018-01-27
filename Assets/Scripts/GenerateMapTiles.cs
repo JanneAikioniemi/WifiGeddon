@@ -41,7 +41,7 @@ public class GenerateMapTiles : MonoBehaviour {
 		{
 			for (int j = 0; j < columns; j++) 
 			{
-				Debug.Log (tileIndexList[i*rows + j]);
+				//Debug.Log (tileIndexList[i*rows + j]);
 				float x = startX + tileWidth * i;
 				float y = startY + tileHeight * j;
 				if(tileIndexList[i*rows + j] == 1)
@@ -59,8 +59,21 @@ public class GenerateMapTiles : MonoBehaviour {
 			RaycastHit hit; 
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
 			if ( Physics.Raycast (ray,out hit,100.0f)) {
-				if (hit.transform.name == "FogOfWar") {
+				switch (hit.transform.tag)
+				{
+				case "FogOfWar":
 					StartCoroutine (RevealTile (hit.transform));
+					break;
+				
+				case "ForestTile":
+					StartCoroutine (ForestTileClicked (hit.transform));
+					break;
+				case "EmptyTile":
+					StartCoroutine (EmptyTileClicked (hit.transform));
+					break;
+				case "TowerTile":
+					StartCoroutine (TowerTileClicked (hit.transform));
+					break;
 				}
 			}
 		}
@@ -68,6 +81,21 @@ public class GenerateMapTiles : MonoBehaviour {
 	IEnumerator RevealTile(Transform obj)
 	{
 		obj.gameObject.SetActive (false);
+		yield return null;
+	}
+	IEnumerator ForestTileClicked(Transform obj)
+	{
+		Debug.Log ("Forest tile clicked");
+		yield return null;
+	}
+	IEnumerator EmptyTileClicked(Transform obj)
+	{
+		Debug.Log ("Empty tile clicked");
+		yield return null;
+	}
+	IEnumerator TowerTileClicked(Transform obj)
+	{
+		Debug.Log ("Tower tile clicked");
 		yield return null;
 	}
 }
