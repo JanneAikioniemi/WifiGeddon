@@ -16,6 +16,9 @@ public class UIManager : MonoBehaviour
     public MainMenuUI MainMenuUi;
     [HideInInspector]
     public TopMenuUI TopMenuUi;
+	[HideInInspector]
+	public EndDayUI EndDayUi;
+
 
     private RectTransform myTransform;
 
@@ -27,7 +30,7 @@ public class UIManager : MonoBehaviour
         WifiTowerUi = transform.GetComponentInChildren<WifiTowerUI>();
         MainMenuUi = transform.GetComponentInChildren<MainMenuUI>();
         TopMenuUi = transform.GetComponentInChildren<TopMenuUI>();
-
+		EndDayUi = transform.GetComponentInChildren<EndDayUI> ();
     }
 
     public void ShowCabinUi(bool show)
@@ -49,12 +52,20 @@ public class UIManager : MonoBehaviour
     {
         WifiTowerUi.gameObject.SetActive(show);
     }
-
+	public void ShowEndDayUi(bool show)
+	{
+		EndDayUi.gameObject.SetActive (show);
+		if (show == true) {
+			EndDayUi.EndDayPanel.SetActive (false);
+			StartCoroutine (EndDayUi.Fade ());
+		}
+	}
     public void HideAll()
     {
         ShowForestUi(false);
         ShowCabinUi(false);
         ShowWifiTower(false);
         ShowMarketUi(false);
+		ShowEndDayUi (false);
     }
 }

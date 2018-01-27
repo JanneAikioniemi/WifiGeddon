@@ -11,7 +11,7 @@ public class MapHandler : MonoBehaviour {
 	public int moneyFromChopping = 100;
 	void Update()
 	{
-		if ( Input.GetMouseButtonDown (0)){ 
+		if ( Input.GetMouseButtonDown (0) && ResourceManager.Instance.TimeLeftForRound>0){ 
 			RaycastHit hit; 
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
 			if ( Physics.Raycast (ray,out hit,100.0f)) {
@@ -20,7 +20,6 @@ public class MapHandler : MonoBehaviour {
 				case "FogOfWar":
 					StartCoroutine (RevealTile (hit.transform));
 					break;
-
 				case "ForestTile":
 					StartCoroutine (ForestTileClicked (hit.transform));
 					break;
