@@ -62,6 +62,10 @@ public class Item
     public string DisplayName;
     [SerializeField]
     public float Price;
+    [SerializeField]
+    public int Count;
+    [SerializeField]
+    public bool IsOwned;
 
     public Item(ItemType type, string name, float price)
     {
@@ -70,4 +74,8 @@ public class Item
         Price = price;
     }
 }
+
+
+
+
 

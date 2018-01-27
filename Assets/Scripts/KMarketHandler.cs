@@ -17,7 +17,7 @@ public class KMarketHandler : MonoBehaviour
         combinedList.AddRange(ItemDB.Instance.GetFoodItems());
         combinedList.AddRange(ItemDB.Instance.GetBoozeItems());
 
-        int random = Random.Range(1, 10);
+        int random = Random.Range(3, 10);
 
         // Random amount of stuff in store
         for (int i = 0; i < random; i++)
@@ -25,10 +25,11 @@ public class KMarketHandler : MonoBehaviour
             if (combinedList.Count <= 0) break;
 
             int r = Random.Range(0, combinedList.Count);
+            var item = combinedList[r];
 
             var obj = Instantiate(GameManager.Instance.BuyButtonPrefab);
             obj.transform.SetParent(ContentRoot, false);
-            obj.name = "Buy_" + i;
+            obj.name = "Buy_" + item.DisplayName;
             obj.GetComponent<ActionBuyItem>().SetItem(combinedList[r]);
             combinedList.RemoveAt(r);
         }

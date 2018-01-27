@@ -26,7 +26,7 @@ public class ActionBuyItem : MenuAction
     {
         item = i;
 
-        m_button.transform.GetComponentInChildren<Text>().text = item.DisplayName;
+        m_button.transform.GetComponentInChildren<Text>().text = string.Format("{0} - {1:0}", item.DisplayName, item.Price);
     }
 
     public bool CanAfford()
