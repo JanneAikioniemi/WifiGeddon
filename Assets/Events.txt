@@ -1,0 +1,44 @@
+Hangover (small): Time lost (2)
+You wake up covered in your own drool. Your sleeping position has been less than ideal. Morning tasks seem to take forever as you wait caffeine to kick in. You lose two hours of time.
+
+Hangover: Time lost (4)
+You have slept like a baby - Covered in your own vomit and shit. "Ei paha, tiskit jääny tiskaamatta (sound)" It takes four hours for you to hug porcelain plumbing fixture and throw your sheets to burnable trash.
+
+Arrested: (Time lost (whole day)) (drunk, no memory)
+To your surprise, you are visited by the local police chief. "Siis vittu Matti (sound)" He talks about the events that you are completely oblivious about and takes you to a police station for questioning for the whole day.
+
+Injured: (Time lost 4)
+You have hurt your hand as a totally unexpected result of trying to act like a functionin alcoholic. It takes four hours for you to extract your morning coffee.
+
+Delirium: lose axe / Lose food / Get injured status
+You wake up delirious and your memory is hazy. You remember shouting to a squirrel and you notice that you have tried to make more firewood. During your morning practices, you notice that your axe is missing.
+You wake up with your mouth half full of food. Some remains of hazy memories return to you about feeding birds with your food rations that seem like a dream. When eating your morning cereals, you notice that couple days worth of food is missing.
+You wake up covered in blood, WTF? (You are injured)
+
+Friend paid loans: Gain 20$
+During your morning activities, your good friend stops by to pay you his loan that you have already forgotten. You gain 20$.
+
+Hunger: lose time (4)
+You wake up to a crippling hunger. You gobble up something resembling of a food that is intended for human beings and go back to bed to sleep for a few more hours.
+
+Nothing happened
+You get mail from Tele Norland. It's an invoice for a cell phone plan. You rip it to shreds.
+Your morning was uneventful.
+You shaved your beard and ate breakfast.
+
+Info event (Tower spotted in cardinal direction (E-W) or (N-S))
+You heard rumors from postman that he spotted Tele Norland van in the Eastern / Western / Northern / Southern part of the forest.
+You realize that few days ago when store clerk mentioned seeing suspicious men in the Eastern / Western / Northern / Southern part of the forest must have been Tele Norland employees setting up the Wifi tower.
+
+Item requirement events:
+Friday: You drink all your liquor / Lose time (6)
+Instantly when you wake up, you realize that it is Friday and chug a bottle of liquor for the occasion.
+It's Friday and you don't have your Friday bottle. You contemplate life for six hours.
+
+shotgun: nothing / get food
+You wake up and see a wood grouse trotting around on your property. You grab your shotgun and shoot the bird dead. You gain one food.
+You see a wood grouse looking for food near your barn. You try to kill it by throwing a kitchen knife towards it, but the laughable attempt just ends up raising your blood pressure.
+
+beer: nothing / lose beer (friend visits and drinks your beer)
+Your friend pays you a visit before going off to work. The damn drunk empties your beer reserves before he abruptly leaves for work, grumbling something about being late.
+Your friend pays you a visit. You heat up cold coffee from yesterday and exchange couple boring notions of todays weather with him.

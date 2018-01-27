@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: ff274bef5035c14498fe4e07d6c30a6c
+timeCreated: 1517066782
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Line001
+    100008: Line002
+    100010: Line003
+    100012: masto009
+    100014: masto1
+    100016: masto2
+    100018: masto3
+    100020: masto4
+    100022: masto5
+    100024: masto6
+    100026: masto7
+    100028: masto8
+    100030: muuntaja
+    100032: perustus
+    100034: //RootNode
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Line001
+    400008: Line002
+    400010: Line003
+    400012: masto009
+    400014: masto1
+    400016: masto2
+    400018: masto3
+    400020: masto4
+    400022: masto5
+    400024: masto6
+    400026: masto7
+    400028: masto8
+    400030: muuntaja
+    400032: perustus
+    400034: //RootNode
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Line001
+    2300008: Line002
+    2300010: Line003
+    2300012: masto009
+    2300014: masto1
+    2300016: masto2
+    2300018: masto3
+    2300020: masto4
+    2300022: masto5
+    2300024: masto6
+    2300026: masto7
+    2300028: masto8
+    2300030: muuntaja
+    2300032: perustus
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Line001
+    3300008: Line002
+    3300010: Line003
+    3300012: masto009
+    3300014: masto1
+    3300016: masto2
+    3300018: masto3
+    3300020: masto4
+    3300022: masto5
+    3300024: masto6
+    3300026: masto7
+    3300028: masto8
+    3300030: muuntaja
+    3300032: perustus
+    4300000: masto1
+    4300002: perustus
+    4300004: masto2
+    4300006: masto3
+    4300008: masto4
+    4300010: masto5
+    4300012: masto6
+    4300014: masto7
+    4300016: masto8
+    4300018: muuntaja
+    4300020: Line001
+    4300022: Line002
+    4300024: Line003
+    4300026: masto009
+    4300028: Box001
+    4300030: Box002
+    4300032: Box003
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #34'
+    second: {fileID: 2100000, guid: 089a2c31a3d4a794883485e899f0a861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: betoni
+    second: {fileID: 2100000, guid: 8163823f4dcfc1d47be36ba27b1b6aa6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: harja
+    second: {fileID: 2100000, guid: fd1d8abc1a5f0f447ae18dc20c750aec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kaapelit
+    second: {fileID: 2100000, guid: 04686151b2892a54c93562631537932b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: katto
+    second: {fileID: 2100000, guid: 3d72d96e818d0b44cb6bd9dc75ac8a06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lahetin
+    second: {fileID: 2100000, guid: 8466a883660cfe34282b21e218e97a8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: perustus
+    second: {fileID: 2100000, guid: 9ee661dfcf7789647a5a4023c3f2ab45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seina
+    second: {fileID: 2100000, guid: cc16e8799b173b14e98c2097595ba33e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
