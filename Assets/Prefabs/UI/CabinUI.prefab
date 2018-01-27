@@ -149,7 +149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1742151306079896
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "KRI\xC4\xC4\xC4H"
+  m_Text: Tower must fall!
 --- !u!114 &114296423656713842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nature calls
+  m_Text: To the wilderness!
 --- !u!114 &114609113832609172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -487,7 +487,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gimme beer
+  m_Text: I need some wares!
 --- !u!114 &114634392347727530
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -9,7 +9,7 @@ public class ResourceManager
     {
         get { return _instance ?? (_instance = new ResourceManager()); }
     }
-	public int daysLeft = 7;
+    public int daysLeft = 7;
     public float CurrentMoney = 300;
     public float CurrentWood = 100;
     public float TimeLeftForRound = 100;
@@ -58,5 +58,18 @@ public class ResourceManager
     public void RemoveFood()
     {
         CurrentItems.RemoveAll(t => t.ItemType == ItemType.Food);
+    }
+
+    public bool HasSpecialItem(SpecialItemType type)
+    {
+        foreach (var i in ItemDB.Instance.GetSpecialItems())
+        {
+            if (i.Special == type)
+            {
+                return i.IsOwned;
+            }
+        }
+
+        return false;
     }
 }
