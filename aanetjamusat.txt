@@ -1,9 +1,9 @@
 ﻿Musat:
- * Yleisbiisi: joku humppa tjsp?
-	- Joku paatoksellinen perushumppa. Tää kaveri on "grumpy old man".
+ * Yleisbiisi: 
+	- Peltoniemen hintriikka sound-like (DONE)
  * Jokaselle kaupalle oma biisi?
 	- Vois olla hyvä.
-		- Sirkan ruokakauppa
+		- Sirkan ruokakauppa, Humppa (DONE)
 		- Maurin sekatavarakauppa
 		- Sepon kotipolttoset
  * Metsäbiisi?
@@ -12,13 +12,45 @@
 Äänet
  * päähenkilön sadattelua (Risu-ukko?)
 	- Risu-ukko kyllä! Perkelettä pitäs saaha jokunen erilainen.
+		* Perkele
+		* Perrrrkele
+		* Saatana
+ 		* Hupiukko!
+		* Minä en oo kuule hupiukko
+ 		* Perkele kun tekis mieli ampua
+		* Elä leike perkele jeesusta
+		* Mitäh!
+		* Isomies
+		* Usko nyt perkele
  * Työmiehen sadattelua (On tämä saatana työmaa)
 	- Juuri näin
+		* Jeesus Saatana
+		* Jottain Saatana muka.
+		* Ei mikää mee saatana kohtuudella
+		* Tulisivat ite laittamaan saatanan huoltoukot
+		* Ei Saatanan saatana
+		* Saatanan saatanan saatanan saatana!
+		* Hommatkoon huoltoukot noihin saatanan vehkeisiin.
+		* Vaiha kaapeli, vaiha boksi itekkään eivät tiijjä
+		* Ihan tyhjää hommaa vaan teetättää
+		* Viinaa pittää juua
+		* On tämä kyllä työmaa saatana
 	- Lisäksi jotain työn ääniä, sahausta, vasarointia yms.
+		* Sahausta
+		* Vasarointia
+		* Räikkä
  * Valikkoääniä
 	- Risu-ukolla on se "TÄ", sitä vois käyttää eri pitcheillä :D
+		* Tä, Mitä
+		* Perkele (ks. yllä)
   * Juomille ym omat?
 	- tölkin avaus, glupglupglup, gulp, aaaah
+		* Tökin avaus
+		* Glug
+		* Glugglug
+		* Aah
  * metsän ääniä?
 	- linnun laulua, metänhakkuuta, joku kruntskruntskävely maybe.
+		* Käen kukunta
+		* Muuta linnun laulua
  
