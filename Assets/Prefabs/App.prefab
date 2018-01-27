@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4714390843763976}
   - component: {fileID: 114645398103428724}
   - component: {fileID: 114799604696683350}
+  - component: {fileID: 114947059318860808}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -126,3 +127,14 @@ MonoBehaviour:
   - ItemType: 3
     DisplayName: Pesismaila
     Price: 50
+--- !u!114 &114947059318860808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838711948068544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b1363ee8b5d4a9bac265fbcad7a0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
