@@ -44,12 +44,16 @@ public class GenerateMapTiles : MonoBehaviour {
 				//Debug.Log (tileIndexList[i*rows + j]);
 				float x = startX + tileWidth * i;
 				float y = startY + tileHeight * j;
-				if(tileIndexList[i*rows + j] == 1)
-					Instantiate (towerTile, new Vector3 (x,0,y), Quaternion.identity);
-				else if(tileIndexList[i*rows + j] >1 && tileIndexList[i*rows + j] <= 1+maxEmptyTileCount)
-					Instantiate (emptyTile, new Vector3 (x,0,y), Quaternion.identity);
-				else if(tileIndexList[i*rows + j] >1+maxEmptyTileCount)
-					Instantiate (forestTile, new Vector3 (x,0,y), Quaternion.identity);
+				if (tileIndexList [i * rows + j] == 1) {
+					GameObject newTile = Instantiate (towerTile, new Vector3 (x, 0, y), Quaternion.identity);
+					newTile.transform.parent = this.transform;
+				} else if (tileIndexList [i * rows + j] > 1 && tileIndexList [i * rows + j] <= 1 + maxEmptyTileCount) {
+					GameObject newTile = Instantiate (emptyTile, new Vector3 (x, 0, y), Quaternion.identity);
+					newTile.transform.parent = this.transform;
+				} else if (tileIndexList [i * rows + j] > 1 + maxEmptyTileCount) {
+					GameObject newTile = Instantiate (forestTile, new Vector3 (x, 0, y), Quaternion.identity);
+					newTile.transform.parent = this.transform;
+				}
 			}
 		}
 	}
