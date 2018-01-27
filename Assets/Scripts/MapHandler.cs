@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MapHandler : MonoBehaviour {
 	public delegate void WoodChoppedAction();
 	public static event WoodChoppedAction OnWoodChopped;
-
+	public EventSystem _eventSystem;
 	public float timeSpendOnSearch = 5f;
 	public float timeSpendOnChopping = 10f;
 	public int moneyFromChopping = 100;
 	void Update()
-	{
-		if ( Input.GetMouseButtonDown (0) && ResourceManager.Instance.TimeLeftForRound>0){ 
+	{		
+		if ( Input.GetMouseButtonDown (0) && ResourceManager.Instance.TimeLeftForRound>0 && !_eventSystem.IsPointerOverGameObject()) 
+		{ 
 			RaycastHit hit; 
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
 			if ( Physics.Raycast (ray,out hit,100.0f)) {

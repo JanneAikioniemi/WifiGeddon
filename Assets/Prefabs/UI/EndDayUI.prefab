@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 224203495396997210}
   - component: {fileID: 222828179923330070}
   - component: {fileID: 114277615435989656}
+  - component: {fileID: 114154747107041338}
   - component: {fileID: 114149923918457212}
   m_Layer: 5
   m_Name: Button
@@ -187,9 +188,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114277615435989656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1081292608320138}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114154747107041338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921606007478600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c240d2fb50000dc4fb880176210c5611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114277615435989656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,6 +278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0caf858d5366476b95b5f941343e06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EndDayPanel: {fileID: 1240193574212706}
+  background: {fileID: 114107528027813372}
 --- !u!114 &114851512592299320
 MonoBehaviour:
   m_ObjectHideFlags: 1
