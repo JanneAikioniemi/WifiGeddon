@@ -14,6 +14,7 @@ public enum ViewType
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameObject BuyButtonPrefab;
 
     [SerializeField] public UIManager uiManager;
     [SerializeField] private GameObject cabinScene;

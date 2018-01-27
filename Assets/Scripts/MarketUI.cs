@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MarketUI : MonoBehaviour
 {
-    [SerializeField] private RectTransform kMarket;
+    [SerializeField] private KMarketHandler kMarket;
     [SerializeField] private RectTransform kRauta;
     [SerializeField] private RectTransform alko;
 
