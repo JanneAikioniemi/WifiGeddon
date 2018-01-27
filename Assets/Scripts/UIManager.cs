@@ -4,23 +4,38 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject CabinUi;
-    [SerializeField]
-    private GameObject ForestUi;
-    [SerializeField]
+    [HideInInspector]
+    public CabinUI CabinUi;
+    [HideInInspector]
+    public ForestUI ForestUi;
+    [HideInInspector]
     public MarketUI MarketUi;
-    [SerializeField]
-    private GameObject WifiTowerUi;
+    [HideInInspector]
+    public WifiTowerUI WifiTowerUi;
+    [HideInInspector]
+    public MainMenuUI MainMenuUi;
+    [HideInInspector]
+    public TopMenuUI TopMenuUi;
+
+    void Awake()
+    {
+        CabinUi = FindObjectOfType<CabinUI>();
+        ForestUi = FindObjectOfType<ForestUI>();
+        MarketUi = FindObjectOfType<MarketUI>();
+        WifiTowerUi = FindObjectOfType<WifiTowerUI>();
+        MainMenuUi = FindObjectOfType<MainMenuUI>();
+        TopMenuUi = FindObjectOfType<TopMenuUI>();
+
+    }
 
     public void ShowCabinUi(bool show)
     {
-        CabinUi.SetActive(show);
+        CabinUi.gameObject.SetActive(show);
     }
 
     public void ShowForestUi(bool show)
     {
-        ForestUi.SetActive(show);
+        ForestUi.gameObject.SetActive(show);
     }
 
     public void ShowMarketUi(bool show)
@@ -30,7 +45,7 @@ public class UIManager : MonoBehaviour
 
     public void ShowWifiTower(bool show)
     {
-        WifiTowerUi.SetActive(show);
+        WifiTowerUi.gameObject.SetActive(show);
     }
 
     public void HideAll()

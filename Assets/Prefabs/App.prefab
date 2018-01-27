@@ -82,11 +82,32 @@ MonoBehaviour:
     Price: 50
   generalItems:
   - ItemType: 1
-    DisplayName: Lapio
+    DisplayName: Kirves
+    Price: 20
+  - ItemType: 1
+    DisplayName: Sukset
+    Price: 20
+  - ItemType: 1
+    DisplayName: "Lumikeng\xE4t"
+    Price: 20
+  - ItemType: 1
+    DisplayName: Moottorisaha
+    Price: 20
+  - ItemType: 1
+    DisplayName: Kiikarit
+    Price: 20
+  - ItemType: 1
+    DisplayName: Ruuvipenkki
     Price: 20
   sabotageItems:
   - ItemType: 2
-    DisplayName: Maila
+    DisplayName: Voimapihdit
+    Price: 30
+  - ItemType: 2
+    DisplayName: Sorkkarauta
+    Price: 30
+  - ItemType: 2
+    DisplayName: Papatti
     Price: 30
   weaponItems:
   - ItemType: 3

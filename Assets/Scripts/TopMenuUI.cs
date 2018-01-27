@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TopMenu : MonoBehaviour
+public class TopMenuUI : MonoBehaviour
 {
     public Text CurrentMoney;
 

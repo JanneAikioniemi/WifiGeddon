@@ -39,13 +39,14 @@ GameObject:
   - component: {fileID: 223994997262443930}
   - component: {fileID: 114586139985476510}
   - component: {fileID: 114007632064646800}
+  - component: {fileID: 114089436659419662}
   m_Layer: 5
   m_Name: ForestUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1470861665013782
 GameObject:
   m_ObjectHideFlags: 1
@@ -131,6 +132,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114089436659419662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1411108968752548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914e6b14cc9be754c915e1618be78cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114229427871284250
 MonoBehaviour:
   m_ObjectHideFlags: 1
