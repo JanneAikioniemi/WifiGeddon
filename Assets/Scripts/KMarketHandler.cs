@@ -11,19 +11,26 @@ public class KMarketHandler : MonoBehaviour
         RandomizeContent();
     }
 
+    // TODO: should randomize once per day
     public void RandomizeContent()
     {
         List<Item> combinedList = new List<Item>();
         combinedList.AddRange(ItemDB.Instance.GetFoodItems());
+        combinedList.AddRange(ItemDB.Instance.GetGeneralItems());
         combinedList.AddRange(ItemDB.Instance.GetBoozeItems());
 
-        int random = Random.Range(3, 10);
+        // min and max items
+        int maximum = combinedList.Count;
+        int minimum = combinedList.Count / 3;
+
+        int randomAmountOfItems = Random.Range(minimum, maximum);
 
         // Random amount of stuff in store
-        for (int i = 0; i < random; i++)
+        for (int i = 0; i < randomAmountOfItems; i++)
         {
             if (combinedList.Count <= 0) break;
 
+            // random item
             int r = Random.Range(0, combinedList.Count);
             var item = combinedList[r];
 
