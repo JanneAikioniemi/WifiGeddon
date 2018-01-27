@@ -23,6 +23,32 @@ ModelImporter:
     100030: muuntaja
     100032: perustus
     100034: //RootNode
+    100036: aita
+    100038: aita_rikki
+    100040: Box004
+    100042: Box005
+    100044: Box006
+    100046: Box007
+    100048: Box008
+    100050: Box009
+    100052: Box010
+    100054: Box011
+    100056: Box012
+    100058: Box013
+    100060: Box014
+    100062: Box015
+    100064: Box016
+    100066: Box017
+    100068: Box018
+    100070: Box019
+    100072: Box020
+    100074: Box021
+    100076: Box022
+    100078: Box023
+    100080: Box024
+    100082: Box025
+    100084: Box026
+    100086: Box027
     400000: Box001
     400002: Box002
     400004: Box003
@@ -41,6 +67,32 @@ ModelImporter:
     400030: muuntaja
     400032: perustus
     400034: //RootNode
+    400036: aita
+    400038: aita_rikki
+    400040: Box004
+    400042: Box005
+    400044: Box006
+    400046: Box007
+    400048: Box008
+    400050: Box009
+    400052: Box010
+    400054: Box011
+    400056: Box012
+    400058: Box013
+    400060: Box014
+    400062: Box015
+    400064: Box016
+    400066: Box017
+    400068: Box018
+    400070: Box019
+    400072: Box020
+    400074: Box021
+    400076: Box022
+    400078: Box023
+    400080: Box024
+    400082: Box025
+    400084: Box026
+    400086: Box027
     2300000: Box001
     2300002: Box002
     2300004: Box003
@@ -58,6 +110,32 @@ ModelImporter:
     2300028: masto8
     2300030: muuntaja
     2300032: perustus
+    2300034: aita
+    2300036: aita_rikki
+    2300038: Box004
+    2300040: Box005
+    2300042: Box006
+    2300044: Box007
+    2300046: Box008
+    2300048: Box009
+    2300050: Box010
+    2300052: Box011
+    2300054: Box012
+    2300056: Box013
+    2300058: Box014
+    2300060: Box015
+    2300062: Box016
+    2300064: Box017
+    2300066: Box018
+    2300068: Box019
+    2300070: Box020
+    2300072: Box021
+    2300074: Box022
+    2300076: Box023
+    2300078: Box024
+    2300080: Box025
+    2300082: Box026
+    2300084: Box027
     3300000: Box001
     3300002: Box002
     3300004: Box003
@@ -75,6 +153,32 @@ ModelImporter:
     3300028: masto8
     3300030: muuntaja
     3300032: perustus
+    3300034: aita
+    3300036: aita_rikki
+    3300038: Box004
+    3300040: Box005
+    3300042: Box006
+    3300044: Box007
+    3300046: Box008
+    3300048: Box009
+    3300050: Box010
+    3300052: Box011
+    3300054: Box012
+    3300056: Box013
+    3300058: Box014
+    3300060: Box015
+    3300062: Box016
+    3300064: Box017
+    3300066: Box018
+    3300068: Box019
+    3300070: Box020
+    3300072: Box021
+    3300074: Box022
+    3300076: Box023
+    3300078: Box024
+    3300080: Box025
+    3300082: Box026
+    3300084: Box027
     4300000: masto1
     4300002: perustus
     4300004: masto2
@@ -92,6 +196,32 @@ ModelImporter:
     4300028: Box001
     4300030: Box002
     4300032: Box003
+    4300034: aita
+    4300036: Box023
+    4300038: Box024
+    4300040: Box025
+    4300042: Box026
+    4300044: Box027
+    4300046: Box016
+    4300048: Box017
+    4300050: Box018
+    4300052: Box013
+    4300054: Box005
+    4300056: Box014
+    4300058: Box015
+    4300060: Box006
+    4300062: Box004
+    4300064: Box022
+    4300066: Box020
+    4300068: Box021
+    4300070: Box019
+    4300072: Box011
+    4300074: Box012
+    4300076: Box010
+    4300078: Box009
+    4300080: Box008
+    4300082: Box007
+    4300084: aita_rikki
     9500000: //RootNode
   externalObjects:
   - first:
@@ -99,6 +229,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: 'Material #34'
     second: {fileID: 2100000, guid: 089a2c31a3d4a794883485e899f0a861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tolpat
+    second: {fileID: 2100000, guid: 2aa33dadc257346f2b220ffc36708762, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aita
+    second: {fileID: 2100000, guid: 5f227c1e084d3408f8a0717bb41e7e80, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

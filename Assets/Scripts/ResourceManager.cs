@@ -32,11 +32,10 @@ public class ResourceManager
         if (ItemExists(item))
         {
             var curItem = CurrentItems.First(i => i.DisplayName == item.DisplayName);
-            curItem.OwnedItems++;
+			curItem.OwnedItems +=item.OwnedItems;
         }
         else
-        {
-            item.OwnedItems++;
+        {        
             CurrentItems.Add(item);
         }
 
@@ -80,11 +79,22 @@ public class ResourceManager
         return false;
     }
 
-    public void RemoveFood()
+    public void RemoveAllFood()
     {
         CurrentItems.RemoveAll(t => t.ItemType == ItemType.Food);
     }
+	public void RemoveFood(int amount)
+	{
+		
+	}
+	public void RemoveAllBooze()
+	{
+		CurrentItems.RemoveAll(t => t.ItemType == ItemType.Booze);
+	}
+	public void RemoveBooze(int amount)
+	{
 
+	}
     public bool HasSpecialItem(SpecialItemType type)
     {
         foreach (var i in ItemDB.Instance.GetSpecialItems())
@@ -97,4 +107,30 @@ public class ResourceManager
 
         return false;
     }
+	public int GetCurrentFood()
+	{
+		int c = 0;
+		foreach (var i in ItemDB.Instance.GetFoodItems())
+		{
+			if (i.ItemType == ItemType.Food)
+			{
+				c = c + (i.OwnedItems == 0 ? 1 : i.OwnedItems);
+			}
+		}
+
+		return c;
+	}
+	public int GetCurrentBeer()
+	{
+		int c = 0;
+		foreach (var i in ItemDB.Instance.GetBoozeItems())
+		{
+			if (i.ItemType == ItemType.Booze)
+			{
+				c = c + (i.OwnedItems == 0 ? 1 : i.OwnedItems);
+			}
+		}
+
+		return c;
+	}
 }

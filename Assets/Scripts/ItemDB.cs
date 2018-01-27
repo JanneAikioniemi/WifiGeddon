@@ -51,7 +51,34 @@ public enum SpecialItemType
     BoltCutter,
     Crowbar,
     Dynamite,
-    TinFoil
+    TinFoil,
+	Axe
+}
+public enum Effect
+{
+	nothing,
+	loseTime,
+	loseMoney,
+	loseFood,
+	loseBeer,
+	loseItem,
+	getMoney, 
+	injure,
+	getItem
+}
+
+[Serializable]
+public class RandomEvent {
+	public string descriptionText;
+	public Effect effect;
+	public int value;
+
+	public RandomEvent(string dt, Effect e, int a)
+	{
+		this.descriptionText = dt;
+		this.effect = e;
+		this.value = a;
+	}
 }
 
 [Serializable]
@@ -89,7 +116,3 @@ public class SpecialItem : Item
         Price = price;
     }
 }
-
-
-
-

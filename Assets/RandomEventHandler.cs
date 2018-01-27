@@ -5,30 +5,8 @@ using UnityEngine;
 public class RandomEventHandler : MonoBehaviour {
 	List<RandomEvent> randomEventList;
 	int randomEventIndex = 0;
-	public enum Effect
-	{
-		nothing,
-		loseTime,
-		loseMoney,
-		loseFood,
-		loseBeer,
-		loseItem,
-		getMoney, 
-		injure,
-		getItem
-	}
-	public class RandomEvent {
-		public string descriptionText;
-		public Effect effect;
-		public int value;
 
-		public RandomEvent(string dt, Effect e, int a)
-		{
-			this.descriptionText = dt;
-			this.effect = e;
-			this.value = a;
-		}
-	}
+
 	void Start()
 	{
 		randomEventList = new List<RandomEvent>();
@@ -47,6 +25,17 @@ public class RandomEventHandler : MonoBehaviour {
 			}
 		}
 	}
+	public RandomEvent GetRandomEvent (){
+		//Debug.Log (randomEventList [randomEventIndex].descriptionText + ": " + randomEventList [randomEventIndex].effect + ", " + randomEventList [randomEventIndex].value);
+		RandomEvent currentEvent = randomEventList[randomEventIndex];
+		if (randomEventIndex < randomEventList.Count-1)
+			randomEventIndex++;
+		else {
+			randomEventIndex = 0;
+			RandomizeList ();
+		}
+		return currentEvent;
+	}
 	void RandomizeList()
 	{
 		for (int i = 0; i < randomEventList.Count; i++) {
@@ -58,9 +47,9 @@ public class RandomEventHandler : MonoBehaviour {
 	}
 	void GenerateRandomEventList()
 	{	//AXE IS LOST ITEM 1
-		AddRandomEventToList("You wake up delirious and your memory is hazy. You remember shouting to a squirrel and you notice that you have tried to make more firewood. During your morning practices, you notice that your axe is missing.", Effect.loseItem, 1);
+		AddRandomEventToList("You wake up delirious and your memory is hazy. You remember shouting to a squirrel and you notice that you have tried to make more firewood. During your morning practices, you notice that your axe is blunt, you had to sharpen it.", Effect.loseTime, 10);
 		AddRandomEventToList("You wake up with your mouth half full of food. Some remains of hazy memories return to you about feeding birds with your food rations that seem like a dream. When eating your morning cereals, you notice that couple days worth of food is missing.", Effect.loseFood, 2);
-		AddRandomEventToList("You wake up covered in blood, WTF?", Effect.injure, 1);
+		AddRandomEventToList("You wake up covered in blood, WTF?", Effect.loseTime, 10);
 		AddRandomEventToList("During your morning activities, your good friend stops by to pay you his loan that you have already forgotten. You gain 20$.", Effect.getMoney, 20);
 		AddRandomEventToList("You get mail from Tele Norland. It's an invoice for a cell phone plan. You rip it to shreds.", Effect.nothing, 0);
 		AddRandomEventToList("Your morning was uneventful", Effect.nothing, 0);
