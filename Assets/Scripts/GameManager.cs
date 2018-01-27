@@ -15,10 +15,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public GameObject CabinUi;
-    public GameObject ForestUi;
-    public GameObject MarketUi;
-    public GameObject WifiTowerUi;
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameObject cabinScene;
+    [SerializeField] private GameObject forestScene;
+    [SerializeField] private GameObject marketScene;
+    [SerializeField] private GameObject wifiScene;
 
     void Awake()
     {
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void SwitchView(ViewType view)
     {
-        HideAllUIs();
+        HideAll();
 
         switch (view)
         {
@@ -61,29 +62,35 @@ public class GameManager : MonoBehaviour
 
     private void SwitchToWifiTower()
     {
-        WifiTowerUi.SetActive(true);
+        uiManager.ShowWifiTower(true);
+        wifiScene.SetActive(true);
     }
 
     private void SwitchToMarketView()
     {
-        MarketUi.SetActive(true);
+        uiManager.ShowMarketUi(true);
+        marketScene.SetActive(true);
     }
 
     private void SwitchToForestView()
     {
-        ForestUi.SetActive(true);
+        uiManager.ShowForestUi(true);
+        forestScene.SetActive(true);
     }
 
     private void SwitchToCabinView()
     {
-        CabinUi.SetActive(true);
+        uiManager.ShowCabinUi(true);
+        cabinScene.SetActive(true);
     }
 
-    private void HideAllUIs()
+    private void HideAll()
     {
-        ForestUi.SetActive(false);
-        CabinUi.SetActive(false);
-        WifiTowerUi.SetActive(false);
-        MarketUi.SetActive(false);
+        uiManager.HideAll();
+
+        cabinScene.SetActive(false);
+        forestScene.SetActive(false);
+        marketScene.SetActive(false);
+        wifiScene.SetActive(false);
     }
 }

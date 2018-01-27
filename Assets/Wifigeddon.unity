@@ -308,7 +308,7 @@ Prefab:
     - target: {fileID: 224704864612910814, guid: 8bb947d34ea70544dbe9a5c725d81add,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 150
+      value: 150.00012
       objectReference: {fileID: 0}
     - target: {fileID: 224162770823916386, guid: 8bb947d34ea70544dbe9a5c725d81add,
         type: 2}
@@ -319,6 +319,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.x
       value: 959.9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047011062792092, guid: 8bb947d34ea70544dbe9a5c725d81add, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bb947d34ea70544dbe9a5c725d81add, type: 2}
@@ -617,6 +621,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 443164548}
+  - component: {fileID: 443164549}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -641,6 +646,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &443164549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 443164547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253a04cd356da144585956d69e040ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CabinUi: {fileID: 1480343549}
+  ForestUi: {fileID: 1047758210}
+  MarketUi: {fileID: 121153968}
+  WifiTowerUi: {fileID: 1741567153}
 --- !u!1001 &888590842
 Prefab:
   m_ObjectHideFlags: 0
@@ -1112,10 +1132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a40f9065277fd46bf4be5d9772649f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CabinUi: {fileID: 1480343549}
-  ForestUi: {fileID: 1047758210}
-  MarketUi: {fileID: 121153968}
-  WifiTowerUi: {fileID: 1741567153}
+  uiManager: {fileID: 443164549}
+  cabinScene: {fileID: 1566649912}
+  forestScene: {fileID: 1190878796}
+  marketScene: {fileID: 113361826}
+  wifiScene: {fileID: 1140866664}
 --- !u!4 &1606083331
 Transform:
   m_ObjectHideFlags: 0
@@ -1323,7 +1344,7 @@ Prefab:
     - target: {fileID: 224433190343615466, guid: afbed0907d50b254797c26a34efb3d00,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 150
+      value: 150.00012
       objectReference: {fileID: 0}
     - target: {fileID: 224645752462898042, guid: afbed0907d50b254797c26a34efb3d00,
         type: 2}
@@ -1334,6 +1355,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 2504.4626
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265256661299036, guid: afbed0907d50b254797c26a34efb3d00, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afbed0907d50b254797c26a34efb3d00, type: 2}
@@ -1511,6 +1536,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.y
       value: -540
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411108968752548, guid: 58225c48acd4a1b4e9b0b479109008ca, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58225c48acd4a1b4e9b0b479109008ca, type: 2}
