@@ -8,6 +8,7 @@ TagManager:
   - ForestTile
   - TowerTile
   - FogOfWar
+  - Wood
   layers:
   - Default
   - TransparentFX

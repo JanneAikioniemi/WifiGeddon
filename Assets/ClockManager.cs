@@ -39,8 +39,9 @@ public class ClockManager : MonoBehaviour {
 		float imageFillAmount = clockCurrentValue / clockMaxValue;
 		fillImage.fillAmount = imageFillAmount;
 
-		if (clockCurrentValue >= clockMaxValue && OnOutOfTime!=null) {
-			OnOutOfTime ();
+		if (clockCurrentValue >= clockMaxValue) {
+			if(OnOutOfTime!=null)
+				OnOutOfTime ();
 		}
 	}
 }
