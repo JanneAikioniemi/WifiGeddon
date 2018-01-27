@@ -467,7 +467,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Home sweet home
+  m_Text: Enough social life!
 --- !u!114 &114169290497669148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -620,7 +620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4G-Rauta
+  m_Text: Mauri's accessories
 --- !u!114 &114368099606367640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -750,7 +750,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4G-Market
+  m_Text: Sirkkas's food and wares
 --- !u!114 &114569287265070674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4G-Alko
+  m_Text: Seppo's (home)brewery
 --- !u!222 &222182722784607332
 CanvasRenderer:
   m_ObjectHideFlags: 1

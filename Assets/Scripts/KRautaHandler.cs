@@ -15,8 +15,6 @@ public class KRautaHandler : MonoBehaviour
     public void RandomizeContent()
     {
         List<Item> combinedList = new List<Item>();
-        combinedList.AddRange(ItemDB.Instance.GetSabotageItems());
-        combinedList.AddRange(ItemDB.Instance.GetWeaponItems());
 
         // Random amount of stuff in store
         for (int i = 0; i < combinedList.Count; i++)

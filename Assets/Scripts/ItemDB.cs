@@ -9,8 +9,7 @@ public class ItemDB : MonoBehaviour
     [SerializeField] private List<Item> foodItems;
     [SerializeField] private List<Item> generalItems;
     [SerializeField] private List<Item> boozeItems;
-    [SerializeField] private List<Item> sabotageItems;
-    [SerializeField] private List<Item> weaponItems;
+    [SerializeField] private List<SpecialItem> specialItems;
 
     void Awake()
     {
@@ -33,14 +32,9 @@ public class ItemDB : MonoBehaviour
         return generalItems;
     }
 
-    public List<Item> GetSabotageItems()
+    public List<SpecialItem> GetSpecialItems()
     {
-        return sabotageItems;
-    }
-
-    public List<Item> GetWeaponItems()
-    {
-        return weaponItems;
+        return specialItems;
     }
 }
 
@@ -49,8 +43,15 @@ public enum ItemType
     Food,
     Booze,
     General,
-    Sabotage,
-    Weapon
+    Special
+}
+
+public enum SpecialItemType
+{
+    BoltCutter,
+    Crowbar,
+    Dynamite,
+    TinFoil
 }
 
 [Serializable]
@@ -64,8 +65,6 @@ public class Item
     public float Price;
     [SerializeField]
     public int Count;
-    [SerializeField]
-    public bool IsOwned;
 
     public Item(ItemType type, string name, float price)
     {
@@ -75,6 +74,21 @@ public class Item
     }
 }
 
+[Serializable]
+public class SpecialItem : Item
+{
+    [SerializeField]
+    public SpecialItemType Special;
+    [SerializeField]
+    public bool IsOwned;
+
+    public SpecialItem(ItemType type, string name, float price) : base(type, name, price)
+    {
+        type = ItemType.Special;
+        DisplayName = name;
+        Price = price;
+    }
+}
 
 
 

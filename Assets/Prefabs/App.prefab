@@ -76,100 +76,72 @@ MonoBehaviour:
     DisplayName: Food for one day
     Price: 20
     Count: 0
-    IsOwned: 0
   - ItemType: 0
     DisplayName: Food for two days
     Price: 35
     Count: 0
-    IsOwned: 0
   - ItemType: 0
     DisplayName: Food for three days
     Price: 50
     Count: 0
-    IsOwned: 0
   generalItems:
   - ItemType: 2
     DisplayName: Kiikarit
     Price: 20
     Count: 0
-    IsOwned: 0
   - ItemType: 2
     DisplayName: Sukset
     Price: 20
     Count: 0
-    IsOwned: 0
   - ItemType: 2
     DisplayName: "Lumikeng\xE4t"
     Price: 20
     Count: 0
-    IsOwned: 0
   boozeItems:
   - ItemType: 1
     DisplayName: Kalja x8
     Price: 10
     Count: 0
-    IsOwned: 0
   - ItemType: 1
     DisplayName: Kossu
     Price: 8
     Count: 0
-    IsOwned: 0
   - ItemType: 1
     DisplayName: Limuviina
     Price: 3
     Count: 0
-    IsOwned: 0
   - ItemType: 1
     DisplayName: "Huonoa viini\xE4"
     Price: 6
     Count: 0
-    IsOwned: 0
   - ItemType: 1
     DisplayName: "Hyv\xE4\xE4 viini\xE4"
     Price: 30
     Count: 0
-    IsOwned: 0
-  sabotageItems:
+  specialItems:
   - ItemType: 3
     DisplayName: Voimapihdit
-    Price: 60
+    Price: 230
     Count: 0
+    Special: 0
     IsOwned: 0
   - ItemType: 3
     DisplayName: Sorkkarauta
-    Price: 30
+    Price: 60
     Count: 0
+    Special: 1
     IsOwned: 0
   - ItemType: 3
-    DisplayName: Papatti x20
-    Price: 30
+    DisplayName: "Dynamiittip\xF6tk\xF6"
+    Price: 0
     Count: 0
+    Special: 2
     IsOwned: 0
   - ItemType: 3
-    DisplayName: Ruuvipenkki
-    Price: 200
+    DisplayName: "Dynamiittip\xF6tk\xF6"
+    Price: 0
     Count: 0
-    IsOwned: 0
-  weaponItems:
-  - ItemType: 4
-    DisplayName: Haulikko
-    Price: 120
-    Count: 0
-    IsOwned: 0
-  - ItemType: 4
-    DisplayName: Pesismaila
-    Price: 50
-    Count: 0
-    IsOwned: 0
-  - ItemType: 4
-    DisplayName: Kirves
-    Price: 30
-    Count: 0
-    IsOwned: 0
-  - ItemType: 4
-    DisplayName: Moottorisaha
-    Price: 340
-    Count: 0
+    Special: 3
     IsOwned: 0
 --- !u!114 &114947059318860808
 MonoBehaviour:
