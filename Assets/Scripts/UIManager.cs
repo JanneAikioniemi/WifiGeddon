@@ -57,6 +57,7 @@ public class UIManager : MonoBehaviour
 		EndDayUi.gameObject.SetActive (show);
 		if (show == true) {
 			EndDayUi.EndDayPanel.SetActive (false);
+			EndDayUi.EndGamePanel.SetActive (false);
 			StartCoroutine (EndDayUi.Fade ());
 		}
 	}
