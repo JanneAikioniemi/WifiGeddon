@@ -72,8 +72,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodItems:
   - ItemType: 0
-    DisplayName: Lenkki
-    Price: 2
+    DisplayName: Food for one day
+    Price: 20
+  - ItemType: 0
+    DisplayName: Food for two days
+    Price: 35
+  - ItemType: 0
+    DisplayName: Food for three days
+    Price: 50
   generalItems:
   - ItemType: 1
     DisplayName: Lapio
