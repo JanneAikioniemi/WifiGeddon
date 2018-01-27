@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject ForestUi;
     [SerializeField]
-    private GameObject MarketUi;
+    public MarketUI MarketUi;
     [SerializeField]
     private GameObject WifiTowerUi;
 
@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
 
     public void ShowMarketUi(bool show)
     {
-        MarketUi.SetActive(show);
+        MarketUi.gameObject.SetActive(show);
     }
 
     public void ShowWifiTower(bool show)

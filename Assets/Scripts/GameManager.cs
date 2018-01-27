@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] private UIManager uiManager;
+    [SerializeField] public UIManager uiManager;
     [SerializeField] private GameObject cabinScene;
     [SerializeField] private GameObject forestScene;
     [SerializeField] private GameObject marketScene;

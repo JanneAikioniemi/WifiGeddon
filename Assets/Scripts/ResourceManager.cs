@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ResourceManager
 {
-    private static ResourceManager m_instance;
+    private static ResourceManager _instance;
     public static ResourceManager Instance
     {
-        get { return m_instance ?? (m_instance = new ResourceManager()); }
+        get { return _instance ?? (_instance = new ResourceManager()); }
     }
 
     public float CurrentMoney = 300;
