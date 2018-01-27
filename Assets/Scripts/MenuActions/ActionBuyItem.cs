@@ -10,6 +10,7 @@ public class ActionBuyItem : MenuAction
     public override void Act()
     {
         base.Act();
+        Buy();
     }
 
     void Update()
@@ -42,7 +43,7 @@ public class ActionBuyItem : MenuAction
     private void Buy()
     {
         // Reduce price from current cash
-        ResourceManager.Instance.ReduceMoney(item.Price);
+        ResourceManager.Instance.CurrentMoney -= item.Price;
 
         // Add item to inventory
 

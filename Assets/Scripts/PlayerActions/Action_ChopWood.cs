@@ -9,11 +9,11 @@ public class Action_ChopWood : PlayerAction
 
     public void EarnMoney()
     {
-        ResourceManager.Instance.IncreaseMoney(Random.Range(PriceMin, PriceMax));
+        ResourceManager.Instance.CurrentMoney += Random.Range(PriceMin, PriceMax);
     }
 
     public void ConsumeTime()
     {
-        ResourceManager.Instance.ReduceTime(ActionPoint);
+        ResourceManager.Instance.TimeLeftForRound -= ActionPoint;
     }
 }

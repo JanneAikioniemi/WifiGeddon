@@ -14,29 +14,10 @@ public class ResourceManager
     public float CurrentWood = 100;
     public float TimeLeftForRound = 100;
 
-    public void ReduceMoney(float amount)
+    public void SetStartingCondition(float money, float timeLeft)
     {
-        CurrentMoney -= amount;
-    }
-
-    public void IncreaseMoney(float amount)
-    {
-        CurrentMoney += amount;
-    }
-
-    public void ReduceWood(float amount)
-    {
-        CurrentWood -= amount;
-    }
-
-    public void IncreaseWood(float amount)
-    {
-        CurrentWood += amount;
-    }
-
-    public void ReduceTime(float amount)
-    {
-        TimeLeftForRound -= amount;
+        CurrentMoney = money;
+        TimeLeftForRound = timeLeft;
     }
 
     public void ResetRound(float amount)
