@@ -113,3 +113,6 @@ MonoBehaviour:
   - ItemType: 3
     DisplayName: Haulikko
     Price: 120
+  - ItemType: 3
+    DisplayName: Pesismaila
+    Price: 50

@@ -17,14 +17,16 @@ public class UIManager : MonoBehaviour
     [HideInInspector]
     public TopMenuUI TopMenuUi;
 
-    void Awake()
+    private RectTransform myTransform;
+
+    void Start()
     {
-        CabinUi = FindObjectOfType<CabinUI>();
-        ForestUi = FindObjectOfType<ForestUI>();
-        MarketUi = FindObjectOfType<MarketUI>();
-        WifiTowerUi = FindObjectOfType<WifiTowerUI>();
-        MainMenuUi = FindObjectOfType<MainMenuUI>();
-        TopMenuUi = FindObjectOfType<TopMenuUI>();
+        CabinUi = transform.GetComponentInChildren<CabinUI>();
+        ForestUi = transform.GetComponentInChildren<ForestUI>();
+        MarketUi = transform.GetComponentInChildren<MarketUI>();
+        WifiTowerUi = transform.GetComponentInChildren<WifiTowerUI>();
+        MainMenuUi = transform.GetComponentInChildren<MainMenuUI>();
+        TopMenuUi = transform.GetComponentInChildren<TopMenuUI>();
 
     }
 

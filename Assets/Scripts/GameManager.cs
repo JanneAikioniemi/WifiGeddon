@@ -30,6 +30,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+
+    }
+
+    public void StartGame()
+    {
+        uiManager.MainMenuUi.gameObject.SetActive(false);
         SwitchView(ViewType.Cabin);
     }
 
