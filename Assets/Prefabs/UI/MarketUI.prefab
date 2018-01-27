@@ -153,7 +153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1285332541311198
 GameObject:
   m_ObjectHideFlags: 1
@@ -633,8 +633,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kMarket: {fileID: 114485338873660520}
-  kRauta: {fileID: 224936968676645240}
-  alko: {fileID: 224500293404716514}
+  kRauta: {fileID: 114088245262086028}
+  alko: {fileID: 114346782780252090}
 --- !u!114 &114381865916369198
 MonoBehaviour:
   m_ObjectHideFlags: 1

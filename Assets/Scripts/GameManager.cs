@@ -30,27 +30,29 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-		forestScene.SetActive (false);
+        forestScene.SetActive(false);
     }
 
     public void StartGame()
     {
         uiManager.MainMenuUi.gameObject.SetActive(false);
-		uiManager.ShowEndDayUi (false);
+        uiManager.ShowEndDayUi(false);
         SwitchView(ViewType.Cabin);
     }
-	void Update()
-	{
-		if (ResourceManager.Instance.TimeLeftForRound <= 0) {			
-			EndDay ();
-			ResourceManager.Instance.ResetRound ();
-		}
-	}
-	public void EndDay()
-	{
-		uiManager.ShowEndDayUi (true);
-		//ResourceManager.Instance.ResetRound ();
-	}
+    void Update()
+    {
+        if (ResourceManager.Instance.TimeLeftForRound <= 0)
+        {
+            EndDay();
+            ResourceManager.Instance.ResetRound();
+        }
+    }
+    public void EndDay()
+    {
+        uiManager.ShowEndDayUi(true);
+        uiManager.MarketUi.RefreshStores();
+    }
+
     public void SwitchView(ViewType view)
     {
         HideAll();

@@ -5,8 +5,8 @@ using UnityEngine;
 public class MarketUI : MonoBehaviour
 {
     [SerializeField] private KMarketHandler kMarket;
-    [SerializeField] private RectTransform kRauta;
-    [SerializeField] private RectTransform alko;
+    [SerializeField] private KRautaHandler kRauta;
+    [SerializeField] private AlkoHandler alko;
 
     void Start()
     {
@@ -36,5 +36,11 @@ public class MarketUI : MonoBehaviour
         kMarket.gameObject.SetActive(false);
         kRauta.gameObject.SetActive(false);
         alko.gameObject.SetActive(false);
+    }
+
+    public void RefreshStores()
+    {
+        kMarket.Refresh();
+        kRauta.Refresh();
     }
 }

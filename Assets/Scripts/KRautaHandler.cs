@@ -15,6 +15,14 @@ public class KRautaHandler : MonoBehaviour
     public void RandomizeContent()
     {
         List<Item> combinedList = new List<Item>();
+        combinedList.AddRange(ItemDB.Instance.GetGeneralItems());
+
+        int random = Random.Range(1, 100);
+        if (random % 6 == 0)
+        {
+            var specItem = Random.Range(0, ItemDB.Instance.GetSpecialItems().Count);
+            combinedList.Add(ItemDB.Instance.GetSpecialItems()[specItem]);
+        }
 
         // Random amount of stuff in store
         for (int i = 0; i < combinedList.Count; i++)
@@ -24,5 +32,19 @@ public class KRautaHandler : MonoBehaviour
             obj.name = "Buy_" + combinedList[i].DisplayName;
             obj.GetComponent<ActionBuyItem>().SetItem(combinedList[i]);
         }
+    }
+
+    private void RemoveItems()
+    {
+        foreach (Transform child in ContentRoot)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    public void Refresh()
+    {
+        RemoveItems();
+        RandomizeContent();
     }
 }

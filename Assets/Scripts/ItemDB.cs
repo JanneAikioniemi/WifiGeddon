@@ -64,7 +64,7 @@ public class Item
     [SerializeField]
     public float Price;
     [SerializeField]
-    public int Count;
+    public int OwnedItems;
 
     public Item(ItemType type, string name, float price)
     {

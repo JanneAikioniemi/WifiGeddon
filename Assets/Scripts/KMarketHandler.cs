@@ -41,4 +41,18 @@ public class KMarketHandler : MonoBehaviour
             combinedList.RemoveAt(r);
         }
     }
+
+    private void RemoveItems()
+    {
+        foreach (Transform child in ContentRoot)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    public void Refresh()
+    {
+        RemoveItems();
+        RandomizeContent();
+    }
 }

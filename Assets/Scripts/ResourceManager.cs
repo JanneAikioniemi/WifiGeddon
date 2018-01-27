@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ResourceManager
@@ -28,12 +29,23 @@ public class ResourceManager
 
     public void AddToInventory(Item item)
     {
-        CurrentItems.Add(item);
+        if (ItemExists(item))
+        {
+            var curItem = CurrentItems.First(i => i.DisplayName == item.DisplayName);
+            curItem.OwnedItems++;
+        }
+        else
+        {
+            item.OwnedItems++;
+            CurrentItems.Add(item);
+        }
+
+
 
         Debug.Log("Current inventory: ");
         foreach (var it in CurrentItems)
         {
-            Debug.Log(it.ItemType + " : " + it.DisplayName);
+            Debug.Log(it.ItemType + " : " + it.DisplayName + " count: " + it.OwnedItems);
         }
     }
 
@@ -53,6 +65,19 @@ public class ResourceManager
         {
             CurrentItems.RemoveAt(rmIndex);
         }
+    }
+
+    private bool ItemExists(Item item)
+    {
+        foreach (var i in CurrentItems)
+        {
+            if (i.DisplayName == item.DisplayName)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public void RemoveFood()
