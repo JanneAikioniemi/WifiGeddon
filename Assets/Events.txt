@@ -42,3 +42,21 @@ You see a wood grouse looking for food near your barn. You try to kill it by thr
 beer: nothing / lose beer (friend visits and drinks your beer)
 Your friend pays you a visit before going off to work. The damn drunk empties your beer reserves before he abruptly leaves for work, grumbling something about being late.
 Your friend pays you a visit. You heat up cold coffee from yesterday and exchange couple boring notions of todays weather with him.
+
+
+
+Game Intro text:
+Yesterday frienly market clerk Irma mentioned that 
+a new Wifi tower construction project has now begun
+and that finally this backwater town would get an 
+internet access.
+
+This sent you, an old grumpy electrohypersensitive 
+technophobe, to an all-night drinking frenzy. Luckily 
+during the wee hours, you got an amazing idea to 
+reinforce your cabin to block incoming wifi-signals.
+
+You wake up with a little hangover, 100$ in your 
+pocket and a newfound determination to receive 
+zero pings from that damned wifi tower.
+
