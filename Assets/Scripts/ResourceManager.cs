@@ -9,7 +9,7 @@ public class ResourceManager
     {
         get { return _instance ?? (_instance = new ResourceManager()); }
     }
-
+	public int daysLeft = 7;
     public float CurrentMoney = 300;
     public float CurrentWood = 100;
     public float TimeLeftForRound = 100;
@@ -21,7 +21,7 @@ public class ResourceManager
         TimeLeftForRound = timeLeft;
     }
 
-    public void ResetRound(float amount)
+    public void ResetRound()
     {
         TimeLeftForRound = 100f;
     }

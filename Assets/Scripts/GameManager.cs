@@ -36,9 +36,21 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         uiManager.MainMenuUi.gameObject.SetActive(false);
+		uiManager.ShowEndDayUi (false);
         SwitchView(ViewType.Cabin);
     }
-
+	void Update()
+	{
+		if (ResourceManager.Instance.TimeLeftForRound <= 0) {			
+			EndDay ();
+			ResourceManager.Instance.ResetRound ();
+		}
+	}
+	public void EndDay()
+	{
+		uiManager.ShowEndDayUi (true);
+		//ResourceManager.Instance.ResetRound ();
+	}
     public void SwitchView(ViewType view)
     {
         HideAll();
