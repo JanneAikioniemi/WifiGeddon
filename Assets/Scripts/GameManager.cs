@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject BuyButtonPrefab;
-
+	public AudioClip[] audioFiles;
     [SerializeField] public UIManager uiManager;
     [SerializeField] private GameObject cabinScene;
     [SerializeField] private GameObject forestScene;
