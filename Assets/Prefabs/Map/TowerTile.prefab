@@ -668,6 +668,7 @@ GameObject:
   - component: {fileID: 33167105486807998}
   - component: {fileID: 65204412278607166}
   - component: {fileID: 23134502572772660}
+  - component: {fileID: 114466701190034448}
   m_Layer: 0
   m_Name: TowerTile
   m_TagString: TowerTile
@@ -3326,3 +3327,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114466701190034448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1798943167077458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc80022b0cb8349e98a271c6d24237da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower1: {fileID: 1175299797431862}
+  tower2: {fileID: 1699418085558494}
+  tower3: {fileID: 1153612150029484}
+  tower4: {fileID: 1201628571513540}
+  tower5: {fileID: 1212971698141568}
+  tower6: {fileID: 1094951627009394}
+  tower7: {fileID: 1073575186631750}
+  tower8: {fileID: 1039015076344070}
