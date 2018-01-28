@@ -8,11 +8,13 @@ public class ActionBlowUpTheTower : MenuAction
 	public override void Act()
 	{
 		base.Act();
-		if (ResourceManager.Instance.HasSpecialItem(SpecialItemType.Dynamite) )
-		{
+		if (ResourceManager.Instance.HasSpecialItem (SpecialItemType.Dynamite) &&
+		    ResourceManager.Instance.fenceBroken) {
 			GameManager.Instance.Win ();
-		} 
-		else 
+		} else if (ResourceManager.Instance.fenceBroken) {
+			GameManager.Instance.uiManager.WifiTowerUi.ShowPopup (Strings.FENCE_NOT_BROKEN);
+		}
+		else
 		{
 			GameManager.Instance.uiManager.WifiTowerUi.ShowPopup (Strings.NO_TOOLS);
 		}
