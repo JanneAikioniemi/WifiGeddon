@@ -16,6 +16,7 @@ public class ResourceManager
 	public float CurrentFood = 0;
 	public float CurrentBeer = 0;
 	public float CurrentLiquor = 0;
+
     public float TimeLeftForRound = 100;
 	public int dayCounter = 0;
 	public int hangoverValue = 0;
@@ -109,6 +110,15 @@ public class ResourceManager
 	public void RemoveBooze(int amount)
 	{
 
+	}
+	public bool HasSkis()
+	{
+		foreach (var it in CurrentItems) {
+			if (it.ItemType == ItemType.General)
+			if (it.DisplayName == "Sukset")
+				return true;
+		}
+		return false;
 	}
     public bool HasSpecialItem(SpecialItemType type)
     {

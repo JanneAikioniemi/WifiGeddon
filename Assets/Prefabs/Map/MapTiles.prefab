@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4334915863258898}
   - component: {fileID: 114539801503808394}
-  - component: {fileID: 114949968599849780}
   m_Layer: 0
   m_Name: MapTiles
   m_TagString: Untagged
@@ -60,14 +59,3 @@ MonoBehaviour:
   emptyTile: {fileID: 1800790772232758, guid: d9a5232f867254685bfbca8a9825795d, type: 2}
   towerTile: {fileID: 1798943167077458, guid: 6d9f44ea50fd043f786db07f0ee8f91f, type: 2}
   forestTile: {fileID: 1122430162375684, guid: 1ff0a178fcdc344fe91a5ca59887bbde, type: 2}
---- !u!114 &114949968599849780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1301656381984644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5425cfd7020cd4da3af42917c4458ec0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

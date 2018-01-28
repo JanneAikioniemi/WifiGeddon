@@ -39,7 +39,10 @@ public class MapHandler : MonoBehaviour
     }
     IEnumerator RevealTile(Transform obj)
     {
-        ResourceManager.Instance.TimeLeftForRound -= timeSpendOnSearch;
+		if(ResourceManager.Instance.HasSkis())
+			ResourceManager.Instance.TimeLeftForRound -= timeSpendOnSearch/2;
+		else
+			ResourceManager.Instance.TimeLeftForRound -= timeSpendOnSearch;
         obj.gameObject.SetActive(false);
         yield return null;
     }
@@ -54,8 +57,17 @@ public class MapHandler : MonoBehaviour
                 /*if (OnWoodChopped != null)
 					OnWoodChopped ();
 					*/
-                ResourceManager.Instance.CurrentMoney += moneyFromChopping;
-                ResourceManager.Instance.TimeLeftForRound -= timeSpendOnChopping;
+				if (ResourceManager.Instance.hangoverValue == 0) {
+					ResourceManager.Instance.CurrentMoney += moneyFromChopping;
+					ResourceManager.Instance.TimeLeftForRound -= timeSpendOnChopping;
+				} else if (ResourceManager.Instance.hangoverValue == 1) {
+					ResourceManager.Instance.CurrentMoney += moneyFromChopping*1.5f;
+					ResourceManager.Instance.TimeLeftForRound -= timeSpendOnChopping;
+				}
+				else if (ResourceManager.Instance.hangoverValue == 2) {
+					ResourceManager.Instance.CurrentMoney += moneyFromChopping*2;
+					ResourceManager.Instance.TimeLeftForRound -= timeSpendOnChopping;
+				}
                 break;
             }
         }

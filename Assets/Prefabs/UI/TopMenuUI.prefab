@@ -461,7 +461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Booze:'
+  m_Text: 'Beer:'
 --- !u!114 &114157291580077698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,6 +607,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   daysLeft: {fileID: 114203706331834108}
   CurrentMoney: {fileID: 114604387338342558}
+  foodLeft: {fileID: 114054320084687920}
+  beerLeft: {fileID: 114625376122306632}
+  liquorLeft: {fileID: 114157291580077698}
 --- !u!114 &114373809296688260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1117,7 +1120,7 @@ RectTransform:
   - {fileID: 224319004858215782}
   - {fileID: 224996664774106016}
   m_Father: {fileID: 224328233845665460}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1137,7 +1140,7 @@ RectTransform:
   - {fileID: 224641998111482850}
   - {fileID: 224743337460747830}
   m_Father: {fileID: 224328233845665460}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1228,10 +1231,10 @@ RectTransform:
   m_Children:
   - {fileID: 224853159457684504}
   - {fileID: 224543021115006226}
+  - {fileID: 224120855155423168}
+  - {fileID: 224967610951939784}
   - {fileID: 224149583663948080}
   - {fileID: 224774124805558364}
-  - {fileID: 224967610951939784}
-  - {fileID: 224120855155423168}
   m_Father: {fileID: 224063091186092234}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1346,7 +1349,7 @@ RectTransform:
   - {fileID: 224183896888411984}
   - {fileID: 224687496906374582}
   m_Father: {fileID: 224328233845665460}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1422,7 +1425,7 @@ RectTransform:
   - {fileID: 224852287531858380}
   - {fileID: 224309803429343632}
   m_Father: {fileID: 224328233845665460}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

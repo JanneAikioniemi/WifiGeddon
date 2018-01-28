@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 114346415607114654}
   - component: {fileID: 114154747107041338}
   - component: {fileID: 114157209533776634}
+  - component: {fileID: 114799532126960638}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -285,9 +286,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1081292608320138}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 114820116104853956}
+        m_MethodName: EndGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -351,6 +352,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1081292608320138}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114799532126960638}
+        m_MethodName: ShowDailyMessageDialog
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -507,7 +519,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue
+  m_Text: Perkele!
+--- !u!114 &114799532126960638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952781379918456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb33b59447bf46aeaa40d8eacf88c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CabinEventUI: {fileID: 0}
+  dailyEventText: {fileID: 0}
 --- !u!114 &114820116104853956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -554,7 +579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue
+  m_Text: Perkele!
 --- !u!114 &114982703274331238
 MonoBehaviour:
   m_ObjectHideFlags: 1

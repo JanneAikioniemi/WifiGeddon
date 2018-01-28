@@ -73,18 +73,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodItems:
   - ItemType: 0
-    DisplayName: Food for one day
-    Price: 20
+    DisplayName: "Lenkki\xE4"
+    Price: 10
     OwnedItems: 1
   - ItemType: 0
-    DisplayName: Food for two days
-    Price: 35
-    OwnedItems: 2
+    DisplayName: Hernekeittoa
+    Price: 15
+    OwnedItems: 1
   - ItemType: 0
-    DisplayName: Food for three days
-    Price: 50
-    OwnedItems: 3
-  generalItems: []
+    DisplayName: "M\xE4mmi\xE4"
+    Price: 5
+    OwnedItems: 1
+  - ItemType: 0
+    DisplayName: Koiranmakkaraa
+    Price: 3
+    OwnedItems: 1
+  generalItems:
+  - ItemType: 3
+    DisplayName: Sukset
+    Price: 100
+    OwnedItems: 0
   beerItems:
   - ItemType: 1
     DisplayName: Karhu
@@ -112,36 +120,24 @@ MonoBehaviour:
     Price: 80
     OwnedItems: 1
   specialItems:
-  - ItemType: 3
+  - ItemType: 4
     DisplayName: Voimapihdit
     Price: 230
     OwnedItems: 1
     Special: 0
     IsOwned: 0
-  - ItemType: 3
+  - ItemType: 4
     DisplayName: Sorkkarauta
     Price: 60
     OwnedItems: 1
     Special: 1
     IsOwned: 0
-  - ItemType: 3
+  - ItemType: 4
     DisplayName: "Dynamiittip\xF6tk\xF6"
     Price: 1000
     OwnedItems: 1
     Special: 2
     IsOwned: 0
-  - ItemType: 3
-    DisplayName: Folio
-    Price: 0
-    OwnedItems: 1
-    Special: 3
-    IsOwned: 0
-  - ItemType: 3
-    DisplayName: Kirves
-    Price: 0
-    OwnedItems: 1
-    Special: 4
-    IsOwned: 1
 --- !u!114 &114947059318860808
 MonoBehaviour:
   m_ObjectHideFlags: 1
