@@ -51,8 +51,12 @@ public class GameManager : MonoBehaviour
     {
         uiManager.ShowEndDayUi(true);
         uiManager.MarketUi.RefreshStores();
+		uiManager.WifiTowerUi.ResetUI ();
     }
-
+	public void Win()
+	{
+		uiManager.WinUi.EndGamePanel.SetActive (true);
+	}
     public void SwitchView(ViewType view)
     {
         HideAll();

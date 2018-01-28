@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class WifiTowerUI : MonoBehaviour
 {
     public Transform Popup;
+	public Button[] sabotageButtons;
     public bool FenceBroken = false;
 
     void Start()
@@ -16,7 +17,13 @@ public class WifiTowerUI : MonoBehaviour
     {
 
     }
-
+	public void ResetUI()
+	{
+		Popup.gameObject.SetActive (false);
+		foreach (Button but in sabotageButtons) {
+			but.interactable = true;
+		}
+	}
     public void BreakFence()
     {
         if (HasBoltCutter())
@@ -25,7 +32,7 @@ public class WifiTowerUI : MonoBehaviour
         }
         else
         {
-            ShowPopup();
+			ShowPopup(Strings.NO_TOOLS);
         }
 
     }
@@ -35,14 +42,14 @@ public class WifiTowerUI : MonoBehaviour
         return ResourceManager.Instance.HasSpecialItem(SpecialItemType.BoltCutter);
     }
 
-    private void ShowPopup()
+	public void ShowPopup(string text)
     {
-        StartCoroutine(WaitPopup());
+        StartCoroutine(WaitPopup(text));
     }
 
-    private IEnumerator WaitPopup()
+	private IEnumerator WaitPopup(string text)
     {
-        Popup.GetComponentInChildren<Text>().text = Strings.NO_TOOLS;
+        Popup.GetComponentInChildren<Text>().text = text;
         Popup.gameObject.SetActive(true);
         yield return new WaitForSeconds(3.5f);
         Popup.gameObject.SetActive(false);

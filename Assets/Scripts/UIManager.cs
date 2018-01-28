@@ -18,6 +18,8 @@ public class UIManager : MonoBehaviour
     public TopMenuUI TopMenuUi;
 	[HideInInspector]
 	public EndDayUI EndDayUi;
+	[HideInInspector]
+	public WinUI WinUi;
 
 
     private RectTransform myTransform;
@@ -31,6 +33,8 @@ public class UIManager : MonoBehaviour
         MainMenuUi = transform.GetComponentInChildren<MainMenuUI>();
         TopMenuUi = transform.GetComponentInChildren<TopMenuUI>();
 		EndDayUi = transform.GetComponentInChildren<EndDayUI> ();
+		WinUi = transform.GetComponentInChildren<WinUI> ();
+		WinUi.gameObject.SetActive (false);
     }
 
     public void ShowCabinUi(bool show)
