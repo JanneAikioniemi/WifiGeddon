@@ -8,14 +8,21 @@ public class WifiTowerUI : MonoBehaviour
     public Transform Popup;
 	public Button[] sabotageButtons;
     public bool FenceBroken = false;
-
+	public AudioClip[] tyonAanet;
+	public int audioIndex = 0;
     void Start()
     {
     }
 
     void Update()
     {
+		if (GetComponent<AudioSource> ().enabled && !GetComponent<AudioSource> ().isPlaying) {
+			GetComponent<AudioSource> ().clip = tyonAanet [audioIndex];
+			GetComponent<AudioSource> ().Play ();
 
+			if (audioIndex < tyonAanet.Length-1)
+				audioIndex++;					
+		}			
     }
 	public void ResetUI()
 	{

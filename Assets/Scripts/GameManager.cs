@@ -93,8 +93,10 @@ public class GameManager : MonoBehaviour
     {
         uiManager.ShowWifiTower(true);
         wifiScene.SetActive(true);
-		GetComponent<AudioSource> ().clip = audioFiles [3];
-		GetComponent<AudioSource> ().Play ();
+		uiManager.WifiTowerUi.GetComponent<AudioSource> ().enabled = true;
+		uiManager.WifiTowerUi.audioIndex = 0;
+		uiManager.WifiTowerUi.GetComponent<AudioSource> ().Play();
+		GetComponent<AudioSource> ().Stop ();
     }
 
     private void SwitchToMarketView()

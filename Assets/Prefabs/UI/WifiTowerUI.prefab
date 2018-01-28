@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 114350077931194750}
   - component: {fileID: 114696163733458674}
   - component: {fileID: 114677645959183314}
+  - component: {fileID: 82374885873838368}
   m_Layer: 5
   m_Name: WifiTowerUI
   m_TagString: Untagged
@@ -313,6 +314,86 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!82 &82374885873838368
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265256661299036}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114086132385945128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -889,6 +970,19 @@ MonoBehaviour:
   - {fileID: 114370467769303180}
   - {fileID: 114297783416580404}
   FenceBroken: 0
+  tyonAanet:
+  - {fileID: 8300000, guid: 98cdd90aceb484afea150de5b2596717, type: 3}
+  - {fileID: 8300000, guid: be0403ab818c54756a6d347af3352891, type: 3}
+  - {fileID: 8300000, guid: b13d792143abc41c282f1bd4e8f90a59, type: 3}
+  - {fileID: 8300000, guid: b2ab7fcf756b0466a97246ab5cab5f8b, type: 3}
+  - {fileID: 8300000, guid: 1d3703ce9f01d4d1798f704a5f953f05, type: 3}
+  - {fileID: 8300000, guid: 36e003c2bf664488bbec65bd2da5f7db, type: 3}
+  - {fileID: 8300000, guid: 36e003c2bf664488bbec65bd2da5f7db, type: 3}
+  - {fileID: 8300000, guid: fdc18f84f6f5c4c1da8657483911c8c5, type: 3}
+  - {fileID: 8300000, guid: f2a1decc983874d6e88da1bc72dcf864, type: 3}
+  - {fileID: 8300000, guid: 4efb606d9d3ad441ebbaf95d3918e091, type: 3}
+  - {fileID: 8300000, guid: 0486aa50a8a4b43d5acb7e82d23b5e76, type: 3}
+  audioIndex: 0
 --- !u!114 &114679027067167822
 MonoBehaviour:
   m_ObjectHideFlags: 1
