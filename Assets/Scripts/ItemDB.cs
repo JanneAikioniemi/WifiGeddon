@@ -8,7 +8,8 @@ public class ItemDB : MonoBehaviour
 
     [SerializeField] private List<Item> foodItems;
     [SerializeField] private List<Item> generalItems;
-    [SerializeField] private List<Item> boozeItems;
+    [SerializeField] private List<Item> beerItems;
+	[SerializeField] private List<Item> liquorItems;
     [SerializeField] private List<SpecialItem> specialItems;
 
     void Awake()
@@ -22,11 +23,14 @@ public class ItemDB : MonoBehaviour
         return foodItems;
     }
 
-    public List<Item> GetBoozeItems()
+    public List<Item> GetBeerItems()
     {
-        return boozeItems;
+        return beerItems;
     }
-
+	public List<Item> GetLiquorItems()
+	{
+		return liquorItems;
+	}
     public List<Item> GetGeneralItems()
     {
         return generalItems;
@@ -42,6 +46,7 @@ public enum ItemType
 {
     Food,
     Booze,
+	Liquor,
     General,
     Special
 }

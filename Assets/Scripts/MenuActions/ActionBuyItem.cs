@@ -48,6 +48,11 @@ public class ActionBuyItem : MenuAction
 			var i = item as SpecialItem;
 			i.IsOwned = true;
 		}
+		if (item.GetType () == typeof(Item)) {
+			
+			Debug.Log (item.DisplayName);
+		}
+
         // Add item to inventory
         ResourceManager.Instance.AddToInventory(item);
     }

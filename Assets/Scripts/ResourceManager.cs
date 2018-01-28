@@ -13,6 +13,9 @@ public class ResourceManager
     public int daysLeft = 7;
     public float CurrentMoney = 300;
     public float CurrentWood = 100;
+	public float CurrentFood = 0;
+	public float CurrentBeer = 0;
+	public float CurrentLiquor = 0;
     public float TimeLeftForRound = 100;
 	public bool fenceBroken = false;
     private List<Item> CurrentItems = new List<Item>();
@@ -33,7 +36,7 @@ public class ResourceManager
         if (ItemExists(item))
         {
             var curItem = CurrentItems.First(i => i.DisplayName == item.DisplayName);
-			curItem.OwnedItems +=item.OwnedItems;
+			curItem.OwnedItems ++;
         }
         else
         {        
@@ -46,6 +49,15 @@ public class ResourceManager
         foreach (var it in CurrentItems)
         {
             Debug.Log(it.ItemType + " : " + it.DisplayName + " count: " + it.OwnedItems);
+			if (it.ItemType == ItemType.Booze) {
+				ResourceManager.Instance.CurrentBeer = it.OwnedItems;
+			}
+			if (it.ItemType == ItemType.Liquor) {
+				ResourceManager.Instance.CurrentLiquor = it.OwnedItems;
+			}
+			if (it.ItemType == ItemType.Food) {
+				ResourceManager.Instance.CurrentFood = it.OwnedItems;
+			}
         }
     }
 
@@ -124,11 +136,24 @@ public class ResourceManager
 	public int GetCurrentBeer()
 	{
 		int c = 0;
-		foreach (var i in ItemDB.Instance.GetBoozeItems())
+		foreach (var i in ItemDB.Instance.GetBeerItems())
 		{
 			if (i.ItemType == ItemType.Booze)
 			{
-				c = c + (i.OwnedItems == 0 ? 1 : i.OwnedItems);
+				c++;
+			}
+		}
+
+		return c;
+	}
+	public int GetCurrentLiquor()
+	{
+		int c = 0;
+		foreach (var i in ItemDB.Instance.GetLiquorItems())
+		{
+			if (i.ItemType == ItemType.Liquor)
+			{
+				c++;
 			}
 		}
 
