@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject BuyButtonPrefab;
-	public AudioClip[] audioFiles;
+    public AudioClip[] audioFiles;
     [SerializeField] public UIManager uiManager;
     [SerializeField] private GameObject cabinScene;
     [SerializeField] private GameObject forestScene;
@@ -41,29 +41,41 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+
         if (ResourceManager.Instance.TimeLeftForRound <= 0)
         {
             EndDay();
             ResourceManager.Instance.ResetRound();
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void EndDay()
     {
-		if (GetComponent<AudioSource> ().clip != audioFiles [1]) {
-			GetComponent<AudioSource> ().clip = audioFiles [1];
-			GetComponent<AudioSource> ().Play ();
-		}
+        if (GetComponent<AudioSource>().clip != audioFiles[1])
+        {
+            GetComponent<AudioSource>().clip = audioFiles[1];
+            GetComponent<AudioSource>().Play();
+        }
         uiManager.ShowEndDayUi(true);
         uiManager.MarketUi.RefreshStores();
-		uiManager.WifiTowerUi.ResetUI ();
+        uiManager.WifiTowerUi.ResetUI();
     }
-	public void Win()
-	{
-		uiManager.WinUi.EndGamePanel.SetActive (true);
-	}
+    public void Win()
+    {
+        uiManager.WinUi.EndGamePanel.SetActive(true);
+    }
     public void SwitchView(ViewType view)
     {
-		GetComponent<AudioSource> ().Stop ();
+        GetComponent<AudioSource>().Stop();
         HideAll();
 
         switch (view)
@@ -94,20 +106,21 @@ public class GameManager : MonoBehaviour
     {
         uiManager.ShowWifiTower(true);
         wifiScene.SetActive(true);
-		uiManager.WifiTowerUi.GetComponent<AudioSource> ().enabled = true;
-		uiManager.WifiTowerUi.audioIndex = 0;
-		uiManager.WifiTowerUi.GetComponent<AudioSource> ().Play();
-		GetComponent<AudioSource> ().Stop ();
+        uiManager.WifiTowerUi.GetComponent<AudioSource>().enabled = true;
+        uiManager.WifiTowerUi.audioIndex = 0;
+        uiManager.WifiTowerUi.GetComponent<AudioSource>().Play();
+        GetComponent<AudioSource>().Stop();
     }
 
     private void SwitchToMarketView()
     {
         uiManager.ShowMarketUi(true);
         marketScene.SetActive(true);
-		if (GetComponent<AudioSource> ().clip != audioFiles [2]) {
-			GetComponent<AudioSource> ().clip = audioFiles [2];
-			GetComponent<AudioSource> ().Play ();
-		}
+        if (GetComponent<AudioSource>().clip != audioFiles[2])
+        {
+            GetComponent<AudioSource>().clip = audioFiles[2];
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     private void SwitchToForestView()
@@ -115,26 +128,31 @@ public class GameManager : MonoBehaviour
         uiManager.ShowForestUi(true);
         forestScene.SetActive(true);
 
-		if (GetComponent<AudioSource> ().clip != audioFiles [3]) {
-			GetComponent<AudioSource> ().clip = audioFiles [3];
-			GetComponent<AudioSource> ().Play ();
-		}
+        if (GetComponent<AudioSource>().clip != audioFiles[3])
+        {
+            GetComponent<AudioSource>().clip = audioFiles[3];
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     private void SwitchToCabinView()
     {
         uiManager.ShowCabinUi(true);
         cabinScene.SetActive(true);
-		if (ResourceManager.Instance.hangoverValue > 0) {
-			if (GetComponent<AudioSource> ().clip != audioFiles [0]) {
-				GetComponent<AudioSource> ().clip = audioFiles [0];
-				GetComponent<AudioSource> ().Play ();
-			}
-		} else if (GetComponent<AudioSource> ().clip != audioFiles [1]) {
-			GetComponent<AudioSource> ().clip = audioFiles [1];
-			GetComponent<AudioSource> ().Play ();
-		}
-		
+        if (ResourceManager.Instance.hangoverValue > 0)
+        {
+            if (GetComponent<AudioSource>().clip != audioFiles[0])
+            {
+                GetComponent<AudioSource>().clip = audioFiles[0];
+                GetComponent<AudioSource>().Play();
+            }
+        }
+        else if (GetComponent<AudioSource>().clip != audioFiles[1])
+        {
+            GetComponent<AudioSource>().clip = audioFiles[1];
+            GetComponent<AudioSource>().Play();
+        }
+
     }
 
     private void HideAll()
