@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
 	}
     public void SwitchView(ViewType view)
     {
+		GetComponent<AudioSource> ().Stop ();
         HideAll();
 
         switch (view)

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114645398103428724}
   - component: {fileID: 114799604696683350}
   - component: {fileID: 114947059318860808}
-  - component: {fileID: 82031757027729430}
+  - component: {fileID: 82440456205258966}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -43,7 +43,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82031757027729430
+--- !u!82 &82440456205258966
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

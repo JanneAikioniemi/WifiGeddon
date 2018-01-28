@@ -16,12 +16,12 @@ public class WifiTowerUI : MonoBehaviour
 
     void Update()
     {
-		if (GetComponent<AudioSource> ().enabled && !GetComponent<AudioSource> ().isPlaying) {
-			GetComponent<AudioSource> ().clip = tyonAanet [audioIndex];
-			GetComponent<AudioSource> ().Play ();
-
-			if (audioIndex < tyonAanet.Length-1)
+		if (GetComponent<AudioSource> ().enabled && !GetComponent<AudioSource> ().isPlaying) {			
+			if (audioIndex < tyonAanet.Length - 1) {
+				GetComponent<AudioSource> ().clip = tyonAanet [audioIndex];
+				GetComponent<AudioSource> ().Play ();
 				audioIndex++;					
+			}
 		}			
     }
 	public void ResetUI()
