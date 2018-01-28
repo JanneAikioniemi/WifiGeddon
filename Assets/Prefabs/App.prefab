@@ -84,39 +84,32 @@ MonoBehaviour:
     DisplayName: Food for three days
     Price: 50
     OwnedItems: 3
-  generalItems:
-  - ItemType: 2
-    DisplayName: Kiikarit
-    Price: 20
-    OwnedItems: 1
-  - ItemType: 2
-    DisplayName: Sukset
-    Price: 20
-    OwnedItems: 1
-  - ItemType: 2
-    DisplayName: "Lumikeng\xE4t"
-    Price: 20
-    OwnedItems: 1
-  boozeItems:
+  generalItems: []
+  beerItems:
   - ItemType: 1
-    DisplayName: Kalja x8
+    DisplayName: Karhu
     Price: 10
     OwnedItems: 1
   - ItemType: 1
+    DisplayName: Pirkka olut
+    Price: 5
+    OwnedItems: 1
+  - ItemType: 1
+    DisplayName: Sandels
+    Price: 20
+    OwnedItems: 1
+  liquorItems:
+  - ItemType: 2
     DisplayName: Kossu
-    Price: 8
+    Price: 40
     OwnedItems: 1
-  - ItemType: 1
-    DisplayName: Limuviina
-    Price: 3
+  - ItemType: 2
+    DisplayName: Pontikka
+    Price: 10
     OwnedItems: 1
-  - ItemType: 1
-    DisplayName: "Huonoa viini\xE4"
-    Price: 6
-    OwnedItems: 1
-  - ItemType: 1
-    DisplayName: "Hyv\xE4\xE4 viini\xE4"
-    Price: 30
+  - ItemType: 2
+    DisplayName: Konjakki
+    Price: 80
     OwnedItems: 1
   specialItems:
   - ItemType: 3
@@ -133,7 +126,7 @@ MonoBehaviour:
     IsOwned: 0
   - ItemType: 3
     DisplayName: "Dynamiittip\xF6tk\xF6"
-    Price: 0
+    Price: 1000
     OwnedItems: 1
     Special: 2
     IsOwned: 0

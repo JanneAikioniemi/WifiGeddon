@@ -31,7 +31,7 @@ public class ActionBuyItem : MenuAction
 
     public bool CanAfford()
     {
-        return item.Price < ResourceManager.Instance.CurrentMoney;
+        return item.Price <= ResourceManager.Instance.CurrentMoney;
     }
 
     private void Buy()
@@ -48,6 +48,11 @@ public class ActionBuyItem : MenuAction
 			var i = item as SpecialItem;
 			i.IsOwned = true;
 		}
+		if (item.GetType () == typeof(Item)) {
+			
+			Debug.Log (item.DisplayName);
+		}
+
         // Add item to inventory
         ResourceManager.Instance.AddToInventory(item);
     }

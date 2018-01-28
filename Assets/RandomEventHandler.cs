@@ -75,7 +75,7 @@ public class RandomEventHandler : MonoBehaviour {
 		AddRandomEventToList("You see a wood grouse looking for food near your barn. You try to kill it by throwing a kitchen knife towards it, but the laughable attempt just ends up raising your blood pressure.", Effect.loseTime, 5);
 		AddRandomEventToList("Your friend pays you a visit before going off to work. The damn drunk empties your beer reserves before he abruptly leaves for work, grumbling something about being late.", Effect.loseBeer, 100);
 		AddRandomEventToList("Your friend pays you a visit. You heat up cold coffee from yesterday and exchange couple boring notions of todays weather with him.", Effect.nothing, 0);
-
+		AddRandomEventToList("You have hurt your hand as a totally unexpected result of trying to act like a functionin alcoholic. It takes four hours for you to extract your morning coffee.", Effect.loseTime, 25);
 	}
 	void AddRandomEventToList (string text, Effect effect, int value)
 	{

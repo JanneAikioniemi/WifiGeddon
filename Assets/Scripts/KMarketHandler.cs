@@ -17,7 +17,8 @@ public class KMarketHandler : MonoBehaviour
         List<Item> combinedList = new List<Item>();
         combinedList.AddRange(ItemDB.Instance.GetFoodItems());
         combinedList.AddRange(ItemDB.Instance.GetGeneralItems());
-        combinedList.AddRange(ItemDB.Instance.GetBoozeItems());
+        combinedList.AddRange(ItemDB.Instance.GetBeerItems());
+		combinedList.AddRange(ItemDB.Instance.GetLiquorItems());
 
         // min and max items
         int maximum = combinedList.Count;
