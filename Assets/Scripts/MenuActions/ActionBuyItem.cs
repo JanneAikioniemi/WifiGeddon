@@ -44,6 +44,10 @@ public class ActionBuyItem : MenuAction
         // Reduce price from current cash
         ResourceManager.Instance.CurrentMoney -= item.Price;
 
+		if (item.GetType () == typeof(SpecialItem)) {
+			var i = item as SpecialItem;
+			i.IsOwned = true;
+		}
         // Add item to inventory
         ResourceManager.Instance.AddToInventory(item);
     }

@@ -46,6 +46,7 @@ public class GenerateMapTiles : MonoBehaviour {
 				float y = startY + tileHeight * j;
 				if (tileIndexList [i * rows + j] == 1) {
 					GameObject newTile = Instantiate (towerTile, new Vector3 (x, 0, y), Quaternion.identity);
+					ResourceManager.Instance.towerLocation = new Vector2 (i, j);
 					newTile.transform.parent = this.transform;
 				} else if (tileIndexList [i * rows + j] > 1 && tileIndexList [i * rows + j] <= 1 + maxEmptyTileCount) {
 					GameObject newTile = Instantiate (emptyTile, new Vector3 (x, 0, y), Quaternion.identity);

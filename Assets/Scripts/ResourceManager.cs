@@ -14,8 +14,9 @@ public class ResourceManager
     public float CurrentMoney = 300;
     public float CurrentWood = 100;
     public float TimeLeftForRound = 100;
+	public bool fenceBroken = false;
     private List<Item> CurrentItems = new List<Item>();
-
+	public Vector2 towerLocation;
     public void SetStartingCondition(float money, float timeLeft)
     {
         CurrentMoney = money;

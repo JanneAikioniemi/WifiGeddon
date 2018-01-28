@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ActionBreakFence : MenuAction
 {
+	public GameObject fencePart;
     void Update()
     {
         if (GameManager.Instance.uiManager.WifiTowerUi.FenceBroken)
         {
+			fencePart.SetActive (false);
             gameObject.SetActive(false);
+			ResourceManager.Instance.fenceBroken = true;
         }
     }
 

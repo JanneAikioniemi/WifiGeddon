@@ -15,6 +15,7 @@ public class RandomEventHandler : MonoBehaviour {
 	}
 	void Update()
 	{
+		/*
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			Debug.Log (randomEventList [randomEventIndex].descriptionText + ": " + randomEventList [randomEventIndex].effect + ", " + randomEventList [randomEventIndex].value);
 			if (randomEventIndex < randomEventList.Count-1)
@@ -24,10 +25,27 @@ public class RandomEventHandler : MonoBehaviour {
 				RandomizeList ();
 			}
 		}
+		*/
 	}
 	public RandomEvent GetRandomEvent (){
 		//Debug.Log (randomEventList [randomEventIndex].descriptionText + ": " + randomEventList [randomEventIndex].effect + ", " + randomEventList [randomEventIndex].value);
 		RandomEvent currentEvent = randomEventList[randomEventIndex];
+		if (ResourceManager.Instance.daysLeft == 5) {
+			string direction;
+			if(ResourceManager.Instance.towerLocation.x <5)
+				direction = "Western";
+			else				
+				direction = "Eastern";
+			currentEvent.descriptionText += "\n\nYou heard rumors from postman that he spotted Tele Norland van in the " + direction + " part of the forest.";
+		}
+		if (ResourceManager.Instance.daysLeft == 3) {
+			string direction;
+			if(ResourceManager.Instance.towerLocation.y < 5)
+				direction = "Southern";
+			else				
+				direction = "Northern";
+			currentEvent.descriptionText += "\n\nYou heard rumors from postman that he spotted Tele Norland van in the " + direction + " part of the forest.";
+		}
 		if (randomEventIndex < randomEventList.Count-1)
 			randomEventIndex++;
 		else {
