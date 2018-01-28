@@ -71,6 +71,8 @@ public class ShowDailyMessage : MonoBehaviour {
 			dailyEventText.text += "\n\nTo your surprise, you are visited by the local police chief. He talks about the events that you are completely oblivious about and takes you to a police station for questioning for the whole day.";
 			ResourceManager.Instance.TimeLeftForRound -= 30;
 		*/
+
+		ResourceManager.Instance.hangoverValue = 0;
 		CabinEventUI.SetActive (true);
 	}
 }

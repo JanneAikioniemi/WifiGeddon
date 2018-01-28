@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
     }
     public void EndDay()
     {
+		if (GetComponent<AudioSource> ().clip != audioFiles [1]) {
+			GetComponent<AudioSource> ().clip = audioFiles [1];
+			GetComponent<AudioSource> ().Play ();
+		}
         uiManager.ShowEndDayUi(true);
         uiManager.MarketUi.RefreshStores();
 		uiManager.WifiTowerUi.ResetUI ();
@@ -89,32 +93,45 @@ public class GameManager : MonoBehaviour
     {
         uiManager.ShowWifiTower(true);
         wifiScene.SetActive(true);
-		marketScene.GetComponent<AudioSource> ().Stop ();
-		wifiScene.GetComponent<AudioSource> ().Play ();
+		GetComponent<AudioSource> ().clip = audioFiles [3];
+		GetComponent<AudioSource> ().Play ();
     }
 
     private void SwitchToMarketView()
     {
         uiManager.ShowMarketUi(true);
         marketScene.SetActive(true);
-		marketScene.GetComponent<AudioSource> ().Play ();
-		wifiScene.GetComponent<AudioSource> ().Stop ();
+		if (GetComponent<AudioSource> ().clip != audioFiles [2]) {
+			GetComponent<AudioSource> ().clip = audioFiles [2];
+			GetComponent<AudioSource> ().Play ();
+		}
     }
 
     private void SwitchToForestView()
     {
         uiManager.ShowForestUi(true);
         forestScene.SetActive(true);
-		marketScene.GetComponent<AudioSource> ().Stop ();
-		wifiScene.GetComponent<AudioSource> ().Stop ();
+
+		if (GetComponent<AudioSource> ().clip != audioFiles [3]) {
+			GetComponent<AudioSource> ().clip = audioFiles [3];
+			GetComponent<AudioSource> ().Play ();
+		}
     }
 
     private void SwitchToCabinView()
     {
         uiManager.ShowCabinUi(true);
         cabinScene.SetActive(true);
-		marketScene.GetComponent<AudioSource> ().Stop ();
-		wifiScene.GetComponent<AudioSource> ().Stop ();
+		if (ResourceManager.Instance.hangoverValue > 0) {
+			if (GetComponent<AudioSource> ().clip != audioFiles [0]) {
+				GetComponent<AudioSource> ().clip = audioFiles [0];
+				GetComponent<AudioSource> ().Play ();
+			}
+		} else if (GetComponent<AudioSource> ().clip != audioFiles [1]) {
+			GetComponent<AudioSource> ().clip = audioFiles [1];
+			GetComponent<AudioSource> ().Play ();
+		}
+		
     }
 
     private void HideAll()

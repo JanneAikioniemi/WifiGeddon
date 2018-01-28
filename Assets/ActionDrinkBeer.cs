@@ -10,6 +10,11 @@ public class ActionDrinkBeer : MenuAction {
 			ResourceManager.Instance.CurrentBeer--;
 			if (ResourceManager.Instance.hangoverValue == 0)
 				ResourceManager.Instance.hangoverValue = 1;
+
+			if (GameManager.Instance.GetComponent<AudioSource> ().clip != GameManager.Instance.audioFiles [0]) {
+				GameManager.Instance.GetComponent<AudioSource> ().clip = GameManager.Instance.audioFiles [0];
+				GameManager.Instance.GetComponent<AudioSource> ().Play ();
+			}
 		}
 	}
 
