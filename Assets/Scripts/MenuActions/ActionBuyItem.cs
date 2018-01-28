@@ -31,7 +31,7 @@ public class ActionBuyItem : MenuAction
 
     public bool CanAfford()
     {
-        return item.Price < ResourceManager.Instance.CurrentMoney;
+        return item.Price <= ResourceManager.Instance.CurrentMoney;
     }
 
     private void Buy()

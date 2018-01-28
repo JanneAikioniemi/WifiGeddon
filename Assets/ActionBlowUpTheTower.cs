@@ -11,7 +11,7 @@ public class ActionBlowUpTheTower : MenuAction
 		if (ResourceManager.Instance.HasSpecialItem (SpecialItemType.Dynamite) &&
 		    ResourceManager.Instance.fenceBroken) {
 			GameManager.Instance.Win ();
-		} else if (ResourceManager.Instance.fenceBroken) {
+		} else if (!ResourceManager.Instance.fenceBroken) {
 			GameManager.Instance.uiManager.WifiTowerUi.ShowPopup (Strings.FENCE_NOT_BROKEN);
 		}
 		else
